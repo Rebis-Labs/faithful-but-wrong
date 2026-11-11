@@ -1,0 +1,3352 @@
+{
+  "generated": "2026-10-20T10:12:00.805106+00:00",
+  "meta": {
+    "gold": "eval/reports/fbw/v2/trib2026_noprassi/gold.jsonl",
+    "outputs": "eval/reports/fbw/v2/trib2026_noprassi/outputs.jsonl",
+    "judge": "anthropic/claude-sonnet-4.6",
+    "judge calls": 0,
+    "harness": "fbw-eval 0.1.0.dev0",
+    "thresholds": {
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.85,
+      "context_relevancy": 0.8,
+      "citation_accuracy": 0.9,
+      "correctness": null
+    },
+    "seed": 2026,
+    "citation parser": "built-in [Source: …] tags",
+    "gold provenance": [
+      "Agenzia delle Entrate, Risposta a interpello n. 1/2026 del 12/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 100/2026 del 2/04/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 101/2026 del 2/04/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 102/2026 del 2/04/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 103/2026 del 2/04/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 106/2026 del 25/05/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 109/2026 del 26/05/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 11/2026 del 20/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 110/2026 del 27/05/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 113/2026 del 29/05/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 115/2026 del 4/06/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 116/2026 del 4/06/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 117/2026 del 4/06/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 118/2026 del 8/06/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 119/2026 del 8/06/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 12/2026 del 20/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 124/2026 del 18/06/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 127/2026 del 22/06/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 128/2026 del 25/06/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 13/2026 del 20/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 130/2026 del 25/06/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 131/2026 del 25/06/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 134/2026 del 6/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 136/2026 del 8/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 138/2026 del 8/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 139/2026 del 10/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 14/2026 del 21/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 141/2026 del 10/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 143/2026 del 13/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 144/2026 del 13/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 145/2026 del 13/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 147/2026 del 16/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 15/2026 del 22/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 152/2026 del 31/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 153/2026 del 31/07/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 155/2026 del 7/08/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 156/2026 del 7/08/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 157/2026 del 10/08/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 158/2026 del 10/08/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 159/2026 del 10/08/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 163/2026 del 14/08/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 169/2026 del 3/09/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 173/2026 del 15/09/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 176/2026 del 21/09/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 178/2026 del 30/09/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 179/2026 del 1/10/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 2/2026 del 12/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 20/2026 del 27/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 21/2026 del 28/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 22/2026 del 9/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 23/2026 del 9/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 24/2026 del 9/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 25/2026 del 9/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 26/2026 del 10/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 27/2026 del 10/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 29/2026 del 10/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 3/2026 del 13/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 30/2026 del 10/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 31/2026 del 11/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 32/2026 del 11/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 33/2026 del 11/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 34/2026 del 11/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 35/2026 del 11/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 36/2026 del 11/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 38/2026 del 12/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 39/2026 del 12/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 4/2026 del 14/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 40/2026 del 16/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 41/2026 del 16/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 42/2026 del 18/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 44/2026 del 20/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 45/2026 del 24/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 46/2026 del 24/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 47/2026 del 24/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 48/2026 del 24/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 49/2026 del 24/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 5/2026 del 15/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 50/2026 del 25/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 51/2026 del 25/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 52/2026 del 25/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 54/2026 del 27/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 55/2026 del 27/02/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 58/2026 del 2/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 6/2026 del 16/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 60/2026 del 2/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 61/2026 del 3/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 62/2026 del 3/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 63/2026 del 3/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 64/2026 del 3/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 65/2026 del 4/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 67/2026 del 6/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 68/2026 del 6/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 7/2026 del 16/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 71/2026 del 9/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 74/2026 del 10/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 76/2026 del 11/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 77/2026 del 12/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 79/2026 del 12/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 8/2026 del 16/01/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 80/2026 del 18/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 82/2026 del 20/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 85/2026 del 26/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 86/2026 del 27/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 87/2026 del 30/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 88/2026 del 30/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 90/2026 del 31/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 91/2026 del 31/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 92/2026 del 31/03/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 96/2026 del 1/04/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 97/2026 del 1/04/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana",
+      "Agenzia delle Entrate, Risposta a interpello n. 98/2026 del 1/04/2026 (parere ufficiale = ground truth); estratto LLM 6 ott 2026 dal raw del crawler, selezione umana"
+    ]
+  },
+  "coverage": {
+    "stratifiable": 111,
+    "total": 111
+  },
+  "buckets": [
+    {
+      "bucket": "partial_recall",
+      "n": 47,
+      "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "faithfulness": [
+        0.8107446808510639,
+        0.7531914893617021,
+        0.8681914893617021
+      ],
+      "correctness": [
+        0.2838709677419355,
+        0.1967741935483871,
+        0.36774193548387096
+      ],
+      "citation_accuracy": [
+        0.6702127659574468,
+        0.5425531914893617,
+        0.7872340425531915
+      ],
+      "refusals": 16
+    },
+    {
+      "bucket": "zero_recall",
+      "n": 64,
+      "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "faithfulness": [
+        0.840234375,
+        0.7759375000000001,
+        0.893515625
+      ],
+      "correctness": [
+        0.2111111111111111,
+        0.12222222222222223,
+        0.3148148148148148
+      ],
+      "citation_accuracy": [
+        0.9088541666666666,
+        0.8333333333333334,
+        0.96875
+      ],
+      "refusals": 37
+    }
+  ],
+  "records": [
+    {
+      "question_id": "INTT001",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "23",
+        "3",
+        "75",
+        "interpello-1/2026"
+      ],
+      "retrieved_articles": [
+        "17",
+        "19",
+        "360",
+        "38",
+        "384",
+        "5"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.67,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 0.0,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT002",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "2",
+        "5",
+        "interpello-2/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "16",
+        "2",
+        "3",
+        "3-bis",
+        "360",
+        "5"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.86,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT003",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "4",
+        "9",
+        "interpello-3/2026"
+      ],
+      "retrieved_articles": [
+        "2",
+        "23",
+        "24",
+        "25",
+        "360",
+        "circolare-5-16/07/2026"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT004",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "36",
+        "9",
+        "interpello-4/2026"
+      ],
+      "retrieved_articles": [
+        "109",
+        "16",
+        "360",
+        "6",
+        "78",
+        "93"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 0.29,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT005",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "10",
+        "51",
+        "interpello-5/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "15",
+        "16",
+        "165",
+        "167",
+        "3"
+      ],
+      "context_relevancy": 0.4,
+      "faithfulness": 0.625,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT006",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "121",
+        "5",
+        "54",
+        "8",
+        "interpello-6/2026"
+      ],
+      "retrieved_articles": [
+        "13",
+        "14",
+        "15",
+        "5",
+        "59",
+        "7"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT007",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "49",
+        "interpello-7/2026"
+      ],
+      "retrieved_articles": [
+        "circolare-19-10/10/2024",
+        "circolare-4-16/05/2025"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.67,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.2,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT008",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "23",
+        "3",
+        "49",
+        "51",
+        "interpello-8/2026"
+      ],
+      "retrieved_articles": [
+        "15",
+        "16",
+        "165",
+        "49",
+        "50",
+        "51",
+        "53"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 0.4,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 0.0,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT011",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "2359",
+        "3",
+        "interpello-11/2026"
+      ],
+      "retrieved_articles": [
+        "53",
+        "57"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT012",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "2",
+        "22",
+        "5",
+        "interpello-12/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "16",
+        "2",
+        "3",
+        "3-bis",
+        "5"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT013",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "25",
+        "53",
+        "54-octies",
+        "interpello-13/2026"
+      ],
+      "retrieved_articles": [
+        "19",
+        "26-quater",
+        "74-quater"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 0.0,
+      "correctness": 0.2,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT014",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "51",
+        "interpello-14/2026"
+      ],
+      "retrieved_articles": [
+        "50",
+        "51",
+        "circolare-10-3/07/2025"
+      ],
+      "context_relevancy": 0.75,
+      "faithfulness": 0.85,
+      "answer_relevancy": 0.55,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT015",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "6",
+        "614-bis",
+        "interpello-15/2026"
+      ],
+      "retrieved_articles": [
+        "16",
+        "6",
+        "68",
+        "86"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT020",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "4",
+        "interpello-20/2026"
+      ],
+      "retrieved_articles": [
+        "10",
+        "13",
+        "19",
+        "360",
+        "38",
+        "60",
+        "circolare-1-19/02/2026"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT021",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "177-bis",
+        "25",
+        "64",
+        "79",
+        "interpello-21/2026"
+      ],
+      "retrieved_articles": [
+        "22",
+        "25",
+        "75",
+        "77"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.82,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT022",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "148",
+        "79",
+        "interpello-22/2026"
+      ],
+      "retrieved_articles": [
+        "148",
+        "circolare-1-19/02/2026"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 0.73,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT023",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "14",
+        "172",
+        "176",
+        "interpello-23/2026"
+      ],
+      "retrieved_articles": [
+        "42",
+        "circolare-4-23/02/2024"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.44,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 0.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT024",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "12",
+        "3",
+        "interpello-24/2026"
+      ],
+      "retrieved_articles": [
+        "circolare-18-17/09/2024"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT025",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "16-bis",
+        "2",
+        "interpello-25/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "2",
+        "25",
+        "27",
+        "30",
+        "32",
+        "78-bis"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT026",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "interpello-26/2026"
+      ],
+      "retrieved_articles": [
+        "111",
+        "132",
+        "24",
+        "36",
+        "360",
+        "circolare-18-17/09/2024"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 0.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT027",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "10-bis",
+        "116",
+        "13",
+        "14",
+        "interpello-27/2026"
+      ],
+      "retrieved_articles": [
+        "10",
+        "12",
+        "18",
+        "2",
+        "6",
+        "7"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT029",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "17",
+        "2",
+        "interpello-29/2026"
+      ],
+      "retrieved_articles": [
+        "19",
+        "83"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT030",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "121",
+        "16",
+        "interpello-30/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "115",
+        "16",
+        "1665",
+        "360",
+        "55"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT031",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "121",
+        "16",
+        "interpello-31/2026"
+      ],
+      "retrieved_articles": [
+        "19",
+        "21",
+        "30",
+        "384"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.2,
+      "citation_accuracy": 0.5,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT032",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "109",
+        "16",
+        "3",
+        "interpello-32/2026"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT033",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "13",
+        "25",
+        "interpello-33/2026"
+      ],
+      "retrieved_articles": [
+        "13",
+        "15",
+        "176",
+        "5",
+        "67",
+        "77"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT034",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "3",
+        "interpello-34/2026"
+      ],
+      "retrieved_articles": [
+        "3",
+        "circolare-10-10/05/2024"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 0.5,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT035",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1-bis",
+        "116",
+        "119",
+        "interpello-35/2026"
+      ],
+      "retrieved_articles": [
+        "16",
+        "19",
+        "2",
+        "26",
+        "39",
+        "5",
+        "74-sexies",
+        "83"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT036",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "19",
+        "9-bis",
+        "interpello-36/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "17",
+        "2",
+        "2409-bis",
+        "3",
+        "35",
+        "39",
+        "circolare-8-6/10/2026",
+        "circolare-9-24/06/2025"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.55,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT038",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "17",
+        "182",
+        "2284",
+        "2322",
+        "5",
+        "interpello-38/2026"
+      ],
+      "retrieved_articles": [
+        "182",
+        "183",
+        "21"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.71,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 1.0,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT039",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "3",
+        "85",
+        "9-bis",
+        "interpello-39/2026"
+      ],
+      "retrieved_articles": [
+        "24",
+        "25",
+        "circolare-15-25/06/2024"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.67,
+      "answer_relevancy": 0.2,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT040",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "13",
+        "38-bis",
+        "6",
+        "interpello-40/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "12",
+        "43",
+        "54-quater"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT041",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "100",
+        "19",
+        "19-bis",
+        "51",
+        "95",
+        "interpello-41/2026"
+      ],
+      "retrieved_articles": [
+        "19-bis",
+        "circolare-10-3/07/2025"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 0.5,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT042",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "10-bis",
+        "16",
+        "177",
+        "interpello-42/2026"
+      ],
+      "retrieved_articles": [
+        "4",
+        "53",
+        "6"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT044",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "2",
+        "interpello-44/2026"
+      ],
+      "retrieved_articles": [
+        "23",
+        "24",
+        "25"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT045",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "11",
+        "5",
+        "54",
+        "interpello-45/2026"
+      ],
+      "retrieved_articles": [
+        "circolare-8-6/10/2026"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.83,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT046",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "21",
+        "interpello-46/2026"
+      ],
+      "retrieved_articles": [
+        "circolare-8-6/10/2026",
+        "circolare-9-24/06/2025"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT047",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "19",
+        "4",
+        "interpello-47/2026"
+      ],
+      "retrieved_articles": [
+        "circolare-8-6/10/2026",
+        "circolare-9-24/06/2025"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.91,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT048",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "15",
+        "17",
+        "54",
+        "interpello-48/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "13",
+        "14",
+        "21",
+        "2946",
+        "2948",
+        "30",
+        "380-bis",
+        "384",
+        "93",
+        "96"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT049",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "16",
+        "85",
+        "interpello-49/2026"
+      ],
+      "retrieved_articles": [
+        "67",
+        "68",
+        "82",
+        "circolare-9-24/06/2025"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT050",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "17-bis",
+        "173",
+        "2506",
+        "interpello-50/2026"
+      ],
+      "retrieved_articles": [
+        "173"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT051",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "67",
+        "interpello-51/2026"
+      ],
+      "retrieved_articles": [
+        "10",
+        "12",
+        "32",
+        "56-bis",
+        "circolare-12-8/08/2025"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT052",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "2",
+        "20",
+        "22",
+        "3",
+        "4",
+        "5",
+        "interpello-52/2026"
+      ],
+      "retrieved_articles": [
+        "1988",
+        "22",
+        "23",
+        "24",
+        "25",
+        "52",
+        "6"
+      ],
+      "context_relevancy": 0.42857142857142855,
+      "faithfulness": 0.78,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 0.7,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT054",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "16",
+        "2",
+        "2359",
+        "5",
+        "interpello-54/2026"
+      ],
+      "retrieved_articles": [
+        "16",
+        "3",
+        "38"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.71,
+      "answer_relevancy": 0.2,
+      "citation_accuracy": 0.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT055",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "2",
+        "25-bis",
+        "interpello-55/2026"
+      ],
+      "retrieved_articles": [
+        "109",
+        "23",
+        "24",
+        "2423-bis",
+        "25",
+        "31",
+        "360",
+        "366",
+        "64"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 0.36,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 0.6666666666666666,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT058",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "19",
+        "25",
+        "8",
+        "interpello-58/2026"
+      ],
+      "retrieved_articles": [
+        "13",
+        "17",
+        "19",
+        "2",
+        "3",
+        "384",
+        "5",
+        "57",
+        "8",
+        "risoluzione-7-12/02/2026"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.89,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT060",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1-bis",
+        "23",
+        "interpello-60/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "23",
+        "24",
+        "25",
+        "360",
+        "39",
+        "4",
+        "7",
+        "87",
+        "9"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT061",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "16",
+        "interpello-61/2026"
+      ],
+      "retrieved_articles": [
+        "10",
+        "16",
+        "36-bis"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT062",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "10-bis",
+        "11",
+        "interpello-62/2026"
+      ],
+      "retrieved_articles": [
+        "13",
+        "17",
+        "31",
+        "52",
+        "8",
+        "circolare-12-31/05/2024",
+        "risoluzione-4-29/01/2026"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT063",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "17-bis",
+        "36-bis",
+        "54-bis",
+        "interpello-63/2026"
+      ],
+      "retrieved_articles": [
+        "23",
+        "24",
+        "25"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT064",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "interpello-64/2026"
+      ],
+      "retrieved_articles": [
+        "16",
+        "18",
+        "78"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.2,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT065",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "2",
+        "41",
+        "7",
+        "interpello-65/2026"
+      ],
+      "retrieved_articles": [
+        "138",
+        "2697",
+        "360",
+        "41",
+        "45-bis",
+        "54",
+        "6",
+        "74-sexies"
+      ],
+      "context_relevancy": 0.6,
+      "faithfulness": 0.58,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 0.0,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT067",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "13",
+        "16",
+        "5",
+        "interpello-67/2026"
+      ],
+      "retrieved_articles": [
+        "60-ter",
+        "circolare-21-7/11/2024"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT068",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "interpello-68/2026"
+      ],
+      "retrieved_articles": [
+        "14-bis",
+        "360",
+        "74",
+        "circolare-13-16/12/2025"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.14,
+      "answer_relevancy": 0.2,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT071",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "102",
+        "interpello-71/2026"
+      ],
+      "retrieved_articles": [
+        "109",
+        "circolare-15-22/12/2025"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT074",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "2",
+        "56",
+        "interpello-74/2026"
+      ],
+      "retrieved_articles": [
+        "34",
+        "57"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT076",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "13",
+        "16",
+        "interpello-76/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "16",
+        "2",
+        "3",
+        "3-bis",
+        "5",
+        "circolare-3-16/02/2024",
+        "risoluzione-8-23/02/2026"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT077",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "3",
+        "4",
+        "43",
+        "57",
+        "interpello-77/2026"
+      ],
+      "retrieved_articles": [
+        "11",
+        "22",
+        "2729",
+        "32"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT079",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "10",
+        "14",
+        "interpello-79/2026"
+      ],
+      "retrieved_articles": [
+        "10",
+        "21",
+        "52",
+        "74-sexies"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.64,
+      "answer_relevancy": 0.2,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT080",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "44",
+        "5",
+        "interpello-80/2026"
+      ],
+      "retrieved_articles": [
+        "risoluzione-8-23/02/2026"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 0.3,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT082",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "2",
+        "5",
+        "interpello-82/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "16",
+        "2",
+        "3",
+        "3-bis",
+        "38",
+        "5",
+        "74-septies",
+        "74-sexies"
+      ],
+      "context_relevancy": 0.6,
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 0.0,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT085",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "177-bis",
+        "22",
+        "25",
+        "interpello-85/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "2",
+        "23",
+        "24",
+        "25"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT086",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "67",
+        "68",
+        "interpello-86/2026"
+      ],
+      "retrieved_articles": [
+        "13",
+        "15",
+        "67",
+        "68"
+      ],
+      "context_relevancy": 0.2,
+      "faithfulness": 0.7,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT087",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "11",
+        "32",
+        "interpello-87/2026"
+      ],
+      "retrieved_articles": [
+        "circolare-18-17/09/2024"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.6,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT088",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "17",
+        "4",
+        "6",
+        "70",
+        "interpello-88/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "13",
+        "17",
+        "2",
+        "3",
+        "38-bis",
+        "5",
+        "57",
+        "6",
+        "70-quater",
+        "70-sexies",
+        "73",
+        "8"
+      ],
+      "context_relevancy": 0.25,
+      "faithfulness": 0.625,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 0.5,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT090",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "88",
+        "89",
+        "interpello-90/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "11",
+        "159",
+        "17",
+        "23",
+        "2476",
+        "2495",
+        "2697",
+        "2729",
+        "2909",
+        "360",
+        "38",
+        "5",
+        "6",
+        "72",
+        "75",
+        "77"
+      ],
+      "context_relevancy": 0.16666666666666666,
+      "faithfulness": 0.55,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 0.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT091",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "17",
+        "177",
+        "interpello-91/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "176",
+        "38",
+        "38-bis",
+        "6",
+        "73"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.875,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT092",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "2430",
+        "2431",
+        "47",
+        "interpello-92/2026"
+      ],
+      "retrieved_articles": [
+        "47",
+        "7",
+        "86",
+        "circolare-4-23/02/2024"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.25,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT096",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "5",
+        "88",
+        "interpello-96/2026"
+      ],
+      "retrieved_articles": [
+        "112",
+        "13",
+        "15",
+        "2425",
+        "3",
+        "360",
+        "384",
+        "39",
+        "5",
+        "77",
+        "circolare-5-16/07/2026"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.82,
+      "answer_relevancy": 0.1,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT097",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "87",
+        "interpello-97/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "67",
+        "68",
+        "87",
+        "circolare-17-29/07/2024"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.78,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT098",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "11",
+        "19",
+        "2",
+        "4",
+        "interpello-98/2026"
+      ],
+      "retrieved_articles": [
+        "circolare-18-17/09/2024",
+        "circolare-8-6/10/2026",
+        "circolare-9-24/06/2025"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.35,
+      "citation_accuracy": 1.0,
+      "correctness": 0.2,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT100",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "11",
+        "interpello-100/2026"
+      ],
+      "retrieved_articles": [
+        "circolare-9-24/06/2025"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.86,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT101",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "50",
+        "51",
+        "interpello-101/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "12",
+        "13",
+        "132",
+        "14",
+        "15",
+        "36",
+        "4",
+        "58"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT102",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "6",
+        "interpello-102/2026"
+      ],
+      "retrieved_articles": [
+        "118",
+        "19",
+        "22",
+        "29",
+        "7"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT103",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "21",
+        "interpello-103/2026"
+      ],
+      "retrieved_articles": [
+        "70-decies",
+        "circolare-9-24/06/2025"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.6,
+      "answer_relevancy": 0.2,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT106",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "50",
+        "58",
+        "interpello-106/2026"
+      ],
+      "retrieved_articles": [
+        "14",
+        "2697",
+        "33",
+        "6"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT109",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "2359",
+        "3",
+        "interpello-109/2026"
+      ],
+      "retrieved_articles": [
+        "2697",
+        "38",
+        "38-bis",
+        "5"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT110",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "121",
+        "17",
+        "31",
+        "interpello-110/2026"
+      ],
+      "retrieved_articles": [
+        "8",
+        "circolare-16-28/06/2024"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT113",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "18",
+        "19",
+        "3",
+        "49",
+        "75",
+        "interpello-113/2026"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT115",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "10-bis",
+        "177",
+        "2359",
+        "3",
+        "interpello-115/2026"
+      ],
+      "retrieved_articles": [
+        "10",
+        "12",
+        "32",
+        "4-bis",
+        "5",
+        "53",
+        "6",
+        "7"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT116",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "177",
+        "3",
+        "interpello-116/2026"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT117",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "7",
+        "interpello-117/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "13",
+        "3",
+        "69"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT118",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "16",
+        "16-bis",
+        "interpello-118/2026"
+      ],
+      "retrieved_articles": [
+        "19",
+        "2697",
+        "360",
+        "92",
+        "circolare-8-19/06/2025"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT119",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "16",
+        "16-bis",
+        "interpello-119/2026"
+      ],
+      "retrieved_articles": [
+        "16-bis",
+        "19",
+        "circolare-8-19/06/2025"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 0.44,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT124",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "119",
+        "67",
+        "interpello-124/2026"
+      ],
+      "retrieved_articles": [
+        "67",
+        "circolare-13-13/06/2024"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.7,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 0.5,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT127",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "10",
+        "2",
+        "4",
+        "interpello-127/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "12",
+        "132",
+        "14",
+        "19",
+        "34",
+        "363-bis",
+        "4",
+        "74-sexies"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT128",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "11",
+        "70-bis",
+        "70-quater",
+        "70-ter",
+        "interpello-128/2026"
+      ],
+      "retrieved_articles": [
+        "124",
+        "16",
+        "70-bis",
+        "70-decies",
+        "73"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT130",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "5-bis",
+        "interpello-130/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "11",
+        "13",
+        "34",
+        "5-bis",
+        "6",
+        "9"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT131",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "12",
+        "18",
+        "2",
+        "7",
+        "8",
+        "9",
+        "interpello-131/2026"
+      ],
+      "retrieved_articles": [
+        "13",
+        "15",
+        "2560",
+        "43",
+        "50",
+        "51",
+        "6"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT134",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "67",
+        "82",
+        "interpello-134/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "23",
+        "24",
+        "25",
+        "2697",
+        "67"
+      ],
+      "context_relevancy": 0.2,
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 0.0,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT136",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "95",
+        "interpello-136/2026"
+      ],
+      "retrieved_articles": [
+        "51",
+        "95"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT138",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "182",
+        "19",
+        "47",
+        "interpello-138/2026"
+      ],
+      "retrieved_articles": [
+        "182",
+        "183",
+        "2495",
+        "28",
+        "36"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT139",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "17",
+        "interpello-139/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "384",
+        "7",
+        "73"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT141",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "22",
+        "37",
+        "46",
+        "interpello-141/2026"
+      ],
+      "retrieved_articles": [
+        "107",
+        "1292",
+        "23",
+        "24",
+        "25",
+        "44",
+        "50",
+        "51"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT143",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "2359",
+        "3",
+        "interpello-143/2026"
+      ],
+      "retrieved_articles": [
+        "10",
+        "12",
+        "6",
+        "7"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT144",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "16",
+        "2214",
+        "2215",
+        "2215-bis",
+        "6",
+        "interpello-144/2026"
+      ],
+      "retrieved_articles": [
+        "115",
+        "17-bis",
+        "23",
+        "24",
+        "25",
+        "2727",
+        "360"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT145",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "31",
+        "69",
+        "interpello-145/2026"
+      ],
+      "retrieved_articles": [
+        "53",
+        "circolare-3-16/02/2024"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.71,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 1.0,
+      "correctness": 0.2,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT147",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "2",
+        "interpello-147/2026"
+      ],
+      "retrieved_articles": [
+        "18",
+        "26",
+        "38-bis",
+        "75",
+        "77"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT152",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "2359",
+        "3",
+        "67",
+        "interpello-152/2026"
+      ],
+      "retrieved_articles": [
+        "10",
+        "12",
+        "14",
+        "2479",
+        "2557",
+        "2558",
+        "360",
+        "6",
+        "7"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT153",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "2",
+        "4",
+        "interpello-153/2026"
+      ],
+      "retrieved_articles": [
+        "circolare-1-19/02/2026"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT155",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "10-bis",
+        "17",
+        "177",
+        "interpello-155/2026"
+      ],
+      "retrieved_articles": [
+        "10",
+        "10-bis",
+        "12",
+        "43",
+        "5",
+        "6",
+        "7"
+      ],
+      "context_relevancy": 0.16666666666666666,
+      "faithfulness": 0.67,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT156",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "6",
+        "interpello-156/2026"
+      ],
+      "retrieved_articles": [
+        "2-bis",
+        "circolare-2-24/02/2026"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT157",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "67",
+        "68",
+        "interpello-157/2026"
+      ],
+      "retrieved_articles": [
+        "13",
+        "14",
+        "1472",
+        "15",
+        "1523",
+        "2",
+        "21",
+        "360",
+        "67",
+        "73"
+      ],
+      "context_relevancy": 0.2857142857142857,
+      "faithfulness": 0.6,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT158",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "119",
+        "67",
+        "68",
+        "interpello-158/2026"
+      ],
+      "retrieved_articles": [
+        "13",
+        "15",
+        "circolare-13-13/06/2024"
+      ],
+      "context_relevancy": 0.6,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 1.0,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT159",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "51",
+        "interpello-159/2026"
+      ],
+      "retrieved_articles": [
+        "49",
+        "50",
+        "51",
+        "circolare-4-16/05/2025"
+      ],
+      "context_relevancy": 0.75,
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT163",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "51",
+        "interpello-163/2026"
+      ],
+      "retrieved_articles": [
+        "49",
+        "50",
+        "51",
+        "circolare-4-16/05/2025"
+      ],
+      "context_relevancy": 0.6,
+      "faithfulness": 0.875,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 0.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT169",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "16",
+        "6",
+        "interpello-169/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "17",
+        "25",
+        "35",
+        "5",
+        "8"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT173",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "interpello-173/2026"
+      ],
+      "retrieved_articles": [
+        "circolare-2-24/02/2026",
+        "circolare-3-24/06/2026",
+        "risoluzione-4-29/01/2026"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.2,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT176",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "177",
+        "9",
+        "interpello-176/2026"
+      ],
+      "retrieved_articles": [
+        "175",
+        "177"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.4,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 0.5,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT178",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "51",
+        "78",
+        "interpello-178/2026"
+      ],
+      "retrieved_articles": [
+        "14",
+        "29",
+        "circolare-9-2/05/2024"
+      ],
+      "context_relevancy": 0.25,
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INTT179",
+      "system": "grounded",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "18",
+        "23",
+        "3",
+        "75",
+        "interpello-179/2026"
+      ],
+      "retrieved_articles": [
+        "1",
+        "11",
+        "111",
+        "19",
+        "23",
+        "27",
+        "360",
+        "49",
+        "63",
+        "64",
+        "65",
+        "74-septies",
+        "83"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    }
+  ]
+}

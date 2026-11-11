@@ -1,0 +1,677 @@
+{
+  "generated": "2026-10-30T18:17:02.127114+00:00",
+  "meta": {
+    "gold": "docs/paper_v2/reports/v2_criminal_anchor59/gold.jsonl",
+    "outputs": "eval/reports/fbw/v2/frontier_criminal/outputs_claude.jsonl",
+    "judge": "anthropic/claude-sonnet-4.6",
+    "judge calls": 75,
+    "harness": "fbw-eval 0.1.0.dev0",
+    "thresholds": {
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.85,
+      "context_relevancy": 0.8,
+      "citation_accuracy": 0.9,
+      "correctness": null
+    },
+    "seed": 2026,
+    "citation parser": "built-in [Source: …] tags",
+    "gold provenance": [
+      "|anchor_2026-10-28:confirmed|anchor_2026-10-28:confirmed",
+      "|anchor_2026-10-28:fixed|anchor_2026-10-28:fixed",
+      "|anchor_2026-10-28:no_gold|anchor_2026-10-28:no_gold"
+    ]
+  },
+  "coverage": {
+    "stratifiable": 24,
+    "total": 30
+  },
+  "buckets": [
+    {
+      "bucket": "zero_recall",
+      "n": 24,
+      "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "correctness": [
+        0.925,
+        0.85,
+        0.9875
+      ],
+      "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "refusals": 0
+    },
+    {
+      "bucket": "no_gold_articles",
+      "n": 6,
+      "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "correctness": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "refusals": 0
+    }
+  ],
+  "records": [
+    {
+      "question_id": "CRIM001",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "575"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM002",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "56"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM003",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "50",
+        "51",
+        "52",
+        "53",
+        "54"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM004",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "303"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM005",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "438",
+        "442"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM006",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM007",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "6"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM008",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "20",
+        "24"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.82,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM009",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "61"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.82,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM010",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "52"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM011",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "110"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM012",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "99"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM013",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "628"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM014",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "73"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM015",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "444"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 0.7,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM016",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "274"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM017",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "275"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.82,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM018",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "392"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM019",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "9"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM020",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "4"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM021",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "4"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM022",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "5",
+        "6"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM023",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "165"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.82,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM024",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "51"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM025",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "449"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM_REF001",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM_REF002",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM_REF003",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM_REF004",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "CRIM_REF005",
+      "system": "claude",
+      "domain": "criminal_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    }
+  ]
+}

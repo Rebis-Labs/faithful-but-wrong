@@ -1,0 +1,5 @@
+{"question_id": "ALL001", "system": "grounded", "source": "Codice del Processo Amministrativo", "article": "128", "outcome": "unsupported"}
+{"question_id": "ALL001", "system": "grounded", "source": "", "article": "", "outcome": "unverifiable"}
+{"question_id": "ALL008", "system": "grounded", "source": "", "article": "", "outcome": "unverifiable"}
+{"question_id": "ALL011", "system": "grounded", "source": "L. 212/2000 (Statuto del contribuente)", "article": "10", "outcome": "supported"}
+{"question_id": "ALL012", "system": "grounded", "source": "", "article": "", "outcome": "unverifiable"}

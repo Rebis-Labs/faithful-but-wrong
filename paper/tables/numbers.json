@@ -1,0 +1,4442 @@
+{
+ "tag": "paper-v2-config-2026-10-17",
+ "judge": "anthropic/claude-sonnet-4.6",
+ "sets": {
+  "v2_labor_v3": {
+   "n": 78,
+   "n_judged_correctness": 72,
+   "correctness": [
+    0.7458333333333333,
+    0.6680555555555556,
+    0.8152777777777778
+   ],
+   "faithfulness": [
+    0.8991767123287671,
+    0.8564205479452055,
+    0.9384931506849316
+   ],
+   "pass_rate": [
+    0.358974358974359,
+    0.2564102564102564,
+    0.46153846153846156
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.3333333333333333,
+    0.23076923076923078,
+    0.44871794871794873
+   ],
+   "passes": 28,
+   "passes_from_refusals": 2,
+   "refusal_FP": 1,
+   "refusal_FN": 3,
+   "refusal_TP": 2,
+   "cited": 121,
+   "checkable": 113,
+   "supported": 95,
+   "unsupported": 18,
+   "not_found": 3,
+   "unverifiable": 3,
+   "range_or_list": 2,
+   "precision_checkable": 0.8407079646017699,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 58,
+     "pass_rate": [
+      0.4482758620689655,
+      0.3275862068965517,
+      0.5862068965517241
+     ],
+     "faithfulness": [
+      0.9460551724137931,
+      0.9181810344827587,
+      0.9717534482758621
+     ],
+     "correctness": [
+      0.8301724137931035,
+      0.7612068965517241,
+      0.8922413793103449
+     ],
+     "citation_accuracy": [
+      0.9511494252873564,
+      0.8994252873563219,
+      0.9913793103448276
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 2,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "correctness": [
+      0.725,
+      0.7,
+      0.75
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 11,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.6753363636363636,
+      0.5157636363636364,
+      0.8295818181818182
+     ],
+     "correctness": [
+      0.33,
+      0.13,
+      0.5599999999999999
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 1
+    },
+    "no_gold_articles": {
+     "bucket": "no_gold_articles",
+     "n": 7,
+     "pass_rate": [
+      0.2857142857142857,
+      0.0,
+      0.7142857142857143
+     ],
+     "faithfulness": [
+      0.67,
+      0.43,
+      0.91
+     ],
+     "correctness": [
+      0.4,
+      0.3,
+      0.5
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 2
+    }
+   },
+   "coverage": {
+    "stratifiable": 71,
+    "total": 78
+   },
+   "buckets_from": "v2_labor_v3_anchor59",
+   "verdicts_from": "v2_labor_v3_anchor59",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-10-29T00:01:17.463399+00:00",
+   "label": "Labour benchmark",
+   "ground_truth": "LLM-drafted, anchored"
+  },
+  "v2_criminal": {
+   "n": 30,
+   "n_judged_correctness": 25,
+   "correctness": [
+    0.72,
+    0.632,
+    0.82
+   ],
+   "faithfulness": [
+    0.8144,
+    0.7140000000000001,
+    0.8981999999999999
+   ],
+   "pass_rate": [
+    0.26666666666666666,
+    0.1,
+    0.43333333333333335
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.13333333333333333,
+    0.03333333333333333,
+    0.26666666666666666
+   ],
+   "passes": 8,
+   "passes_from_refusals": 4,
+   "refusal_FP": 0,
+   "refusal_FN": 1,
+   "refusal_TP": 4,
+   "cited": 69,
+   "checkable": 63,
+   "supported": 47,
+   "unsupported": 16,
+   "not_found": 1,
+   "unverifiable": 5,
+   "range_or_list": 0,
+   "precision_checkable": 0.746031746031746,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 21,
+     "pass_rate": [
+      0.19047619047619047,
+      0.047619047619047616,
+      0.38095238095238093
+     ],
+     "faithfulness": [
+      0.8038095238095239,
+      0.6897619047619048,
+      0.8988095238095238
+     ],
+     "correctness": [
+      0.7523809523809524,
+      0.6428571428571429,
+      0.8571428571428571
+     ],
+     "citation_accuracy": [
+      0.9523809523809523,
+      0.8690476190476191,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 1,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.55,
+      0.55,
+      0.55
+     ],
+     "correctness": [
+      0.7,
+      0.7,
+      0.7
+     ],
+     "citation_accuracy": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "refusals": 0
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 2,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.9650000000000001,
+      0.93,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      0.5,
+      0.0,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "no_gold_articles": {
+     "bucket": "no_gold_articles",
+     "n": 6,
+     "pass_rate": [
+      0.6666666666666666,
+      0.3333333333333333,
+      1.0
+     ],
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "refusals": 4
+    }
+   },
+   "coverage": {
+    "stratifiable": 24,
+    "total": 30
+   },
+   "buckets_from": "v2_criminal_anchor59",
+   "verdicts_from": "v2_criminal",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-10-29T00:01:17.808776+00:00",
+   "label": "Criminal benchmark",
+   "ground_truth": "LLM-drafted, anchored"
+  },
+  "v2_admin": {
+   "n": 38,
+   "n_judged_correctness": 33,
+   "correctness": [
+    0.7803030303030303,
+    0.7000000000000001,
+    0.8515151515151516
+   ],
+   "faithfulness": [
+    0.9398484848484848,
+    0.9156060606060606,
+    0.961969696969697
+   ],
+   "pass_rate": [
+    0.23684210526315788,
+    0.10526315789473684,
+    0.3684210526315789
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.15789473684210525,
+    0.05263157894736842,
+    0.2894736842105263
+   ],
+   "passes": 9,
+   "passes_from_refusals": 3,
+   "refusal_FP": 0,
+   "refusal_FN": 2,
+   "refusal_TP": 3,
+   "cited": 88,
+   "checkable": 78,
+   "supported": 65,
+   "unsupported": 13,
+   "not_found": 1,
+   "unverifiable": 5,
+   "range_or_list": 4,
+   "precision_checkable": 0.8333333333333334,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 23,
+     "pass_rate": [
+      0.17391304347826086,
+      0.043478260869565216,
+      0.34782608695652173
+     ],
+     "faithfulness": [
+      0.9293478260869565,
+      0.8997826086956522,
+      0.9584782608695652
+     ],
+     "correctness": [
+      0.8173913043478261,
+      0.7217391304347827,
+      0.9043478260869565
+     ],
+     "citation_accuracy": [
+      0.9333333333333333,
+      0.8623188405797101,
+      0.991304347826087
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 4,
+     "pass_rate": [
+      0.5,
+      0.0,
+      1.0
+     ],
+     "faithfulness": [
+      0.9775,
+      0.9325,
+      1.0
+     ],
+     "correctness": [
+      0.6125,
+      0.5,
+      0.725
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 5,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.946,
+      0.878,
+      1.0
+     ],
+     "correctness": [
+      0.76,
+      0.56,
+      0.96
+     ],
+     "citation_accuracy": [
+      0.9,
+      0.7,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "no_gold_articles": {
+     "bucket": "no_gold_articles",
+     "n": 6,
+     "pass_rate": [
+      0.5,
+      0.16666666666666666,
+      0.8333333333333334
+     ],
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "correctness": [
+      0.7,
+      0.7,
+      0.7
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 3
+    }
+   },
+   "coverage": {
+    "stratifiable": 32,
+    "total": 38
+   },
+   "buckets_from": "v2_admin_anchor59",
+   "verdicts_from": "v2_admin",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-10-29T00:01:18.230423+00:00",
+   "label": "Admin/tax benchmark",
+   "ground_truth": "LLM-drafted, anchored"
+  },
+  "v2_interpelli_lavoro_prassi": {
+   "n": 23,
+   "n_judged_correctness": 23,
+   "correctness": [
+    0.7956521739130435,
+    0.6652173913043479,
+    0.9130434782608695
+   ],
+   "faithfulness": [
+    0.8948565217391306,
+    0.8292782608695652,
+    0.9523913043478262
+   ],
+   "pass_rate": [
+    0.391304347826087,
+    0.21739130434782608,
+    0.6086956521739131
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.391304347826087,
+    0.21739130434782608,
+    0.6086956521739131
+   ],
+   "passes": 9,
+   "passes_from_refusals": 0,
+   "refusal_FP": 0,
+   "refusal_FN": 0,
+   "refusal_TP": 0,
+   "cited": 31,
+   "checkable": 31,
+   "supported": 25,
+   "unsupported": 6,
+   "not_found": 0,
+   "unverifiable": 0,
+   "range_or_list": 0,
+   "precision_checkable": 0.8064516129032258,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 3,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.8472333333333333,
+      0.6667,
+      1.0
+     ],
+     "correctness": [
+      0.8333333333333334,
+      0.5,
+      1.0
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 20,
+     "pass_rate": [
+      0.45,
+      0.25,
+      0.65
+     ],
+     "faithfulness": [
+      0.902,
+      0.824,
+      0.9635
+     ],
+     "correctness": [
+      0.79,
+      0.63,
+      0.925
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    }
+   },
+   "coverage": {
+    "stratifiable": 23,
+    "total": 23
+   },
+   "buckets_from": "v2_interpelli_lavoro_prassi",
+   "verdicts_from": "v2_interpelli_lavoro_prassi",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-10-20T10:11:52.557590+00:00",
+   "label": "Labour interpelli, practice in corpus",
+   "ground_truth": "official reply"
+  },
+  "v2_interpelli_lavoro_noprassi": {
+   "n": 23,
+   "n_judged_correctness": 19,
+   "correctness": [
+    0.3631578947368421,
+    0.2421052631578947,
+    0.4842105263157894
+   ],
+   "faithfulness": [
+    0.7446521739130434,
+    0.6629130434782609,
+    0.8230434782608695
+   ],
+   "pass_rate": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "passes": 0,
+   "passes_from_refusals": 0,
+   "refusal_FP": 4,
+   "refusal_FN": 0,
+   "refusal_TP": 0,
+   "cited": 31,
+   "checkable": 29,
+   "supported": 19,
+   "unsupported": 10,
+   "not_found": 0,
+   "unverifiable": 2,
+   "range_or_list": 0,
+   "precision_checkable": 0.6551724137931034,
+   "buckets": {
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 16,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.7723125,
+      0.688125,
+      0.85775
+     ],
+     "correctness": [
+      0.4357142857142857,
+      0.29285714285714287,
+      0.5785714285714286
+     ],
+     "citation_accuracy": [
+      0.9375,
+      0.8125,
+      1.0
+     ],
+     "refusals": 2
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 7,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.6814285714285714,
+      0.5171428571428571,
+      0.8785714285714286
+     ],
+     "correctness": [
+      0.16,
+      0.02,
+      0.34
+     ],
+     "citation_accuracy": [
+      0.7857142857142857,
+      0.5,
+      1.0
+     ],
+     "refusals": 2
+    }
+   },
+   "coverage": {
+    "stratifiable": 23,
+    "total": 23
+   },
+   "buckets_from": "v2_interpelli_lavoro_noprassi",
+   "verdicts_from": "v2_interpelli_lavoro_noprassi",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-10-20T10:11:56.541882+00:00",
+   "label": "Labour interpelli, practice removed",
+   "ground_truth": "official reply"
+  },
+  "v2_trib2026_prassi": {
+   "n": 111,
+   "n_judged_correctness": 111,
+   "correctness": [
+    0.5463963963963964,
+    0.4864864864864865,
+    0.609009009009009
+   ],
+   "faithfulness": [
+    0.9084984984984985,
+    0.8841891891891892,
+    0.9328228228228228
+   ],
+   "pass_rate": [
+    0.15315315315315314,
+    0.09009009009009009,
+    0.21621621621621623
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.15315315315315314,
+    0.09009009009009009,
+    0.21621621621621623
+   ],
+   "passes": 17,
+   "passes_from_refusals": 0,
+   "refusal_FP": 0,
+   "refusal_FN": 0,
+   "refusal_TP": 0,
+   "cited": 119,
+   "checkable": 118,
+   "supported": 84,
+   "unsupported": 34,
+   "not_found": 0,
+   "unverifiable": 0,
+   "range_or_list": 1,
+   "precision_checkable": 0.711864406779661,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 3,
+     "pass_rate": [
+      0.3333333333333333,
+      0.0,
+      1.0
+     ],
+     "faithfulness": [
+      0.8066666666666666,
+      0.71,
+      1.0
+     ],
+     "correctness": [
+      0.4166666666666667,
+      0.0,
+      0.75
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 106,
+     "pass_rate": [
+      0.1509433962264151,
+      0.08490566037735849,
+      0.2169811320754717
+     ],
+     "faithfulness": [
+      0.9137106918238994,
+      0.8873270440251573,
+      0.9379402515723271
+     ],
+     "correctness": [
+      0.5537735849056604,
+      0.4877358490566038,
+      0.6160377358490566
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 2,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.7849999999999999,
+      0.57,
+      1.0
+     ],
+     "correctness": [
+      0.35,
+      0.2,
+      0.5
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    }
+   },
+   "coverage": {
+    "stratifiable": 111,
+    "total": 111
+   },
+   "buckets_from": "v2_trib2026_prassi",
+   "verdicts_from": "v2_trib2026_prassi",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-10-20T10:11:33.169320+00:00",
+   "label": "Tax interpelli 2026, practice in corpus",
+   "ground_truth": "official reply"
+  },
+  "v2_trib2026_noprassi": {
+   "n": 111,
+   "n_judged_correctness": 58,
+   "correctness": [
+    0.25,
+    0.18620689655172415,
+    0.31896551724137934
+   ],
+   "faithfulness": [
+    0.8277477477477477,
+    0.7828378378378378,
+    0.8657657657657657
+   ],
+   "pass_rate": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "passes": 0,
+   "passes_from_refusals": 0,
+   "refusal_FP": 53,
+   "refusal_FN": 0,
+   "refusal_TP": 0,
+   "cited": 165,
+   "checkable": 71,
+   "supported": 21,
+   "unsupported": 50,
+   "not_found": 0,
+   "unverifiable": 62,
+   "range_or_list": 32,
+   "precision_checkable": 0.29577464788732394,
+   "buckets": {
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 47,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.8107446808510639,
+      0.7531914893617021,
+      0.8681914893617021
+     ],
+     "correctness": [
+      0.2838709677419355,
+      0.1967741935483871,
+      0.36774193548387096
+     ],
+     "citation_accuracy": [
+      0.6702127659574468,
+      0.5425531914893617,
+      0.7872340425531915
+     ],
+     "refusals": 16
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 64,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.840234375,
+      0.7759375000000001,
+      0.893515625
+     ],
+     "correctness": [
+      0.2111111111111111,
+      0.12222222222222223,
+      0.3148148148148148
+     ],
+     "citation_accuracy": [
+      0.9088541666666666,
+      0.8333333333333334,
+      0.96875
+     ],
+     "refusals": 37
+    }
+   },
+   "coverage": {
+    "stratifiable": 111,
+    "total": 111
+   },
+   "buckets_from": "v2_trib2026_noprassi",
+   "verdicts_from": "v2_trib2026_noprassi",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-10-20T10:12:00.805106+00:00",
+   "label": "Tax interpelli 2026, practice removed",
+   "ground_truth": "official reply"
+  },
+  "v2_expert": {
+   "n": 5,
+   "n_judged_correctness": 4,
+   "correctness": [
+    0.25,
+    0.0,
+    0.5
+   ],
+   "faithfulness": [
+    0.47400000000000003,
+    0.194,
+    0.794
+   ],
+   "pass_rate": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "passes": 0,
+   "passes_from_refusals": 0,
+   "refusal_FP": 1,
+   "refusal_FN": 0,
+   "refusal_TP": 0,
+   "cited": 5,
+   "checkable": 2,
+   "supported": 1,
+   "unsupported": 1,
+   "not_found": 0,
+   "unverifiable": 3,
+   "range_or_list": 0,
+   "precision_checkable": 0.5,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 1,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.3,
+      0.3,
+      0.3
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "no_gold_articles": {
+     "bucket": "no_gold_articles",
+     "n": 4,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.5175000000000001,
+      0.1675,
+      0.85
+     ],
+     "correctness": [
+      0.16666666666666666,
+      0.0,
+      0.5
+     ],
+     "citation_accuracy": [
+      0.25,
+      0.0,
+      0.75
+     ],
+     "refusals": 1
+    }
+   },
+   "coverage": {
+    "stratifiable": 1,
+    "total": 5
+   },
+   "buckets_from": "v2_expert",
+   "verdicts_from": "v2_expert",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-10-20T10:12:04.709277+00:00",
+   "label": "Expert set, non-circular items",
+   "ground_truth": "expert"
+  }
+ },
+ "vanilla": {
+  "v2_vanilla_labor_v3": {
+   "n": 78,
+   "n_judged_correctness": 73,
+   "correctness": [
+    0.6438356164383562,
+    0.5602739726027397,
+    0.7273972602739727
+   ],
+   "faithfulness": [
+    0.8501054794520547,
+    0.7969369863013699,
+    0.8960780821917809
+   ],
+   "pass_rate": [
+    0.16666666666666666,
+    0.08974358974358974,
+    0.2564102564102564
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.16666666666666666,
+    0.08974358974358974,
+    0.2564102564102564
+   ],
+   "passes": 13,
+   "passes_from_refusals": 0,
+   "refusal_FP": 0,
+   "refusal_FN": 5,
+   "refusal_TP": 0,
+   "cited": 0,
+   "checkable": 0,
+   "supported": 0,
+   "unsupported": 0,
+   "not_found": 0,
+   "unverifiable": 0,
+   "range_or_list": 0,
+   "precision_checkable": NaN,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 49,
+     "pass_rate": [
+      0.24489795918367346,
+      0.12244897959183673,
+      0.3673469387755102
+     ],
+     "faithfulness": [
+      0.9049530612244898,
+      0.8646,
+      0.9412183673469388
+     ],
+     "correctness": [
+      0.7959183673469388,
+      0.7081632653061225,
+      0.8755102040816326
+     ],
+     "citation_accuracy": [
+      0.8605442176870748,
+      0.7687074829931972,
+      0.9421768707482994
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 4,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.77875,
+      0.6125,
+      0.9450000000000001
+     ],
+     "correctness": [
+      0.6,
+      0.5,
+      0.7
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 18,
+     "pass_rate": [
+      0.05555555555555555,
+      0.0,
+      0.16666666666666666
+     ],
+     "faithfulness": [
+      0.7161111111111111,
+      0.5633333333333334,
+      0.8566666666666667
+     ],
+     "correctness": [
+      0.24444444444444444,
+      0.1111111111111111,
+      0.38333333333333336
+     ],
+     "citation_accuracy": [
+      0.6111111111111112,
+      0.3888888888888889,
+      0.8333333333333334
+     ],
+     "refusals": 0
+    },
+    "no_gold_articles": {
+     "bucket": "no_gold_articles",
+     "n": 7,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.855,
+      0.71,
+      1.0
+     ],
+     "correctness": [
+      0.6,
+      0.5,
+      0.7
+     ],
+     "citation_accuracy": [
+      0.25,
+      0.0,
+      0.5
+     ],
+     "refusals": 0
+    }
+   },
+   "coverage": {
+    "stratifiable": 71,
+    "total": 78
+   },
+   "buckets_from": "v2_vanilla_labor_v3",
+   "verdicts_from": "v2_vanilla_labor_v3",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-11-06T21:56:45.607508+00:00",
+   "label": "Labour benchmark",
+   "ground_truth": "LLM-drafted, anchored",
+   "grounded_set": "v2_labor_v3"
+  },
+  "v2_vanilla_criminal": {
+   "n": 30,
+   "n_judged_correctness": 25,
+   "correctness": [
+    0.53,
+    0.40399999999999997,
+    0.648
+   ],
+   "faithfulness": [
+    0.8892,
+    0.7684000000000001,
+    0.9764
+   ],
+   "pass_rate": [
+    0.03333333333333333,
+    0.0,
+    0.1
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.03333333333333333,
+    0.0,
+    0.1
+   ],
+   "passes": 1,
+   "passes_from_refusals": 0,
+   "refusal_FP": 0,
+   "refusal_FN": 5,
+   "refusal_TP": 0,
+   "cited": 0,
+   "checkable": 0,
+   "supported": 0,
+   "unsupported": 0,
+   "not_found": 0,
+   "unverifiable": 0,
+   "range_or_list": 0,
+   "precision_checkable": NaN,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 14,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.9507142857142857,
+      0.9107142857142857,
+      0.9842857142857143
+     ],
+     "correctness": [
+      0.6392857142857143,
+      0.5071428571428571,
+      0.7607142857142857
+     ],
+     "citation_accuracy": [
+      0.8571428571428571,
+      0.75,
+      0.9642857142857143
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 2,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.96,
+      0.92,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      0.7083333333333333,
+      0.6666666666666666,
+      0.75
+     ],
+     "refusals": 0
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 8,
+     "pass_rate": [
+      0.125,
+      0.0,
+      0.375
+     ],
+     "faithfulness": [
+      0.75,
+      0.5,
+      1.0
+     ],
+     "correctness": [
+      0.35,
+      0.125,
+      0.6375
+     ],
+     "citation_accuracy": [
+      0.5416666666666666,
+      0.25,
+      0.8125
+     ],
+     "refusals": 0
+    },
+    "no_gold_articles": {
+     "bucket": "no_gold_articles",
+     "n": 6,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    }
+   },
+   "coverage": {
+    "stratifiable": 24,
+    "total": 30
+   },
+   "buckets_from": "v2_vanilla_criminal",
+   "verdicts_from": "v2_vanilla_criminal",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-11-06T22:04:33.439048+00:00",
+   "label": "Criminal benchmark",
+   "ground_truth": "LLM-drafted, anchored",
+   "grounded_set": "v2_criminal"
+  },
+  "v2_vanilla_admin": {
+   "n": 38,
+   "n_judged_correctness": 33,
+   "correctness": [
+    0.4590909090909091,
+    0.3545454545454545,
+    0.5712121212121213
+   ],
+   "faithfulness": [
+    0.8593333333333334,
+    0.7603939393939394,
+    0.936060606060606
+   ],
+   "pass_rate": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "passes": 0,
+   "passes_from_refusals": 0,
+   "refusal_FP": 0,
+   "refusal_FN": 5,
+   "refusal_TP": 0,
+   "cited": 0,
+   "checkable": 0,
+   "supported": 0,
+   "unsupported": 0,
+   "not_found": 0,
+   "unverifiable": 0,
+   "range_or_list": 0,
+   "precision_checkable": NaN,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 6,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.9375,
+      0.8541666666666666,
+      1.0
+     ],
+     "correctness": [
+      0.7083333333333334,
+      0.5416666666666666,
+      0.875
+     ],
+     "citation_accuracy": [
+      0.8333333333333334,
+      0.6666666666666666,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 2,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      0.75,
+      0.5,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 24,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.8222083333333333,
+      0.69875,
+      0.929125
+     ],
+     "correctness": [
+      0.39166666666666666,
+      0.25416666666666665,
+      0.5416666666666666
+     ],
+     "citation_accuracy": [
+      0.2708333333333333,
+      0.10416666666666667,
+      0.4375
+     ],
+     "refusals": 0
+    },
+    "no_gold_articles": {
+     "bucket": "no_gold_articles",
+     "n": 6,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "refusals": 0
+    }
+   },
+   "coverage": {
+    "stratifiable": 32,
+    "total": 38
+   },
+   "buckets_from": "v2_vanilla_admin",
+   "verdicts_from": "v2_vanilla_admin",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-11-06T22:13:06.459194+00:00",
+   "label": "Admin/tax benchmark",
+   "ground_truth": "LLM-drafted, anchored",
+   "grounded_set": "v2_admin"
+  },
+  "v2_vanilla_interpelli_lavoro": {
+   "n": 23,
+   "n_judged_correctness": 23,
+   "correctness": [
+    0.6826086956521739,
+    0.5347826086956522,
+    0.8130434782608695
+   ],
+   "faithfulness": [
+    0.9082608695652175,
+    0.8465217391304347,
+    0.9630434782608696
+   ],
+   "pass_rate": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "passes": 0,
+   "passes_from_refusals": 0,
+   "refusal_FP": 0,
+   "refusal_FN": 0,
+   "refusal_TP": 0,
+   "cited": 0,
+   "checkable": 0,
+   "supported": 0,
+   "unsupported": 0,
+   "not_found": 0,
+   "unverifiable": 0,
+   "range_or_list": 0,
+   "precision_checkable": NaN,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 1,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 22,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.9040909090909091,
+      0.8377272727272728,
+      0.9636363636363636
+     ],
+     "correctness": [
+      0.6909090909090909,
+      0.55,
+      0.8318181818181818
+     ],
+     "citation_accuracy": [
+      0.13636363636363635,
+      0.0,
+      0.2727272727272727
+     ],
+     "refusals": 0
+    }
+   },
+   "coverage": {
+    "stratifiable": 23,
+    "total": 23
+   },
+   "buckets_from": "v2_vanilla_interpelli_lavoro",
+   "verdicts_from": "v2_vanilla_interpelli_lavoro",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-11-06T22:19:00.650300+00:00",
+   "label": "Labour interpelli, practice in corpus",
+   "ground_truth": "official reply",
+   "grounded_set": "v2_interpelli_lavoro_prassi"
+  }
+ },
+ "vanilla_caselaw": {
+  "v2_vanillaj_labor_v3": {
+   "n": 78,
+   "n_judged_correctness": 73,
+   "correctness": [
+    0.6397260273972604,
+    0.5534246575342465,
+    0.7205479452054795
+   ],
+   "faithfulness": [
+    0.8423835616438357,
+    0.788313698630137,
+    0.8896849315068494
+   ],
+   "pass_rate": [
+    0.1794871794871795,
+    0.10256410256410256,
+    0.2692307692307692
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.1794871794871795,
+    0.10256410256410256,
+    0.2692307692307692
+   ],
+   "passes": 14,
+   "passes_from_refusals": 0,
+   "refusal_FP": 0,
+   "refusal_FN": 5,
+   "refusal_TP": 0,
+   "cited": 0,
+   "checkable": 0,
+   "supported": 0,
+   "unsupported": 0,
+   "not_found": 0,
+   "unverifiable": 0,
+   "range_or_list": 0,
+   "precision_checkable": NaN,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 48,
+     "pass_rate": [
+      0.2708333333333333,
+      0.14583333333333334,
+      0.3958333333333333
+     ],
+     "faithfulness": [
+      0.9022979166666667,
+      0.8536229166666667,
+      0.9446666666666667
+     ],
+     "correctness": [
+      0.8020833333333334,
+      0.7145833333333333,
+      0.8770833333333333
+     ],
+     "citation_accuracy": [
+      0.8958333333333334,
+      0.8125,
+      0.96875
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 4,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.77,
+      0.6,
+      0.94
+     ],
+     "correctness": [
+      0.525,
+      0.325,
+      0.7
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 19,
+     "pass_rate": [
+      0.05263157894736842,
+      0.0,
+      0.15789473684210525
+     ],
+     "faithfulness": [
+      0.7101947368421053,
+      0.5698947368421052,
+      0.8335105263157895
+     ],
+     "correctness": [
+      0.2578947368421053,
+      0.13157894736842105,
+      0.3894736842105263
+     ],
+     "citation_accuracy": [
+      0.6842105263157895,
+      0.47368421052631576,
+      0.868421052631579
+     ],
+     "refusals": 0
+    },
+    "no_gold_articles": {
+     "bucket": "no_gold_articles",
+     "n": 7,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.8049999999999999,
+      0.71,
+      0.9
+     ],
+     "correctness": [
+      0.6,
+      0.5,
+      0.7
+     ],
+     "citation_accuracy": [
+      0.25,
+      0.0,
+      0.5
+     ],
+     "refusals": 0
+    }
+   },
+   "coverage": {
+    "stratifiable": 71,
+    "total": 78
+   },
+   "buckets_from": "v2_vanillaj_labor_v3",
+   "verdicts_from": "v2_vanillaj_labor_v3",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-11-06T22:35:40.136522+00:00",
+   "label": "Labour benchmark",
+   "grounded_set": "v2_labor_v3"
+  },
+  "v2_vanillaj_criminal": {
+   "n": 30,
+   "n_judged_correctness": 25,
+   "correctness": [
+    0.528,
+    0.41600000000000004,
+    0.632
+   ],
+   "faithfulness": [
+    0.9188,
+    0.8271999999999999,
+    0.9804
+   ],
+   "pass_rate": [
+    0.1,
+    0.0,
+    0.2
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.1,
+    0.0,
+    0.2
+   ],
+   "passes": 3,
+   "passes_from_refusals": 0,
+   "refusal_FP": 0,
+   "refusal_FN": 5,
+   "refusal_TP": 0,
+   "cited": 0,
+   "checkable": 0,
+   "supported": 0,
+   "unsupported": 0,
+   "not_found": 0,
+   "unverifiable": 0,
+   "range_or_list": 0,
+   "precision_checkable": NaN,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 16,
+     "pass_rate": [
+      0.125,
+      0.0,
+      0.3125
+     ],
+     "faithfulness": [
+      0.96875,
+      0.928125,
+      1.0
+     ],
+     "correctness": [
+      0.625,
+      0.51875,
+      0.7375
+     ],
+     "citation_accuracy": [
+      0.984375,
+      0.953125,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 2,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.96,
+      0.92,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      0.7083333333333333,
+      0.6666666666666666,
+      0.75
+     ],
+     "refusals": 0
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 6,
+     "pass_rate": [
+      0.16666666666666666,
+      0.0,
+      0.5
+     ],
+     "faithfulness": [
+      0.7583333333333333,
+      0.425,
+      0.9666666666666667
+     ],
+     "correctness": [
+      0.2833333333333333,
+      0.08333333333333333,
+      0.5166666666666666
+     ],
+     "citation_accuracy": [
+      0.6388888888888888,
+      0.3055555555555556,
+      0.9166666666666666
+     ],
+     "refusals": 0
+    },
+    "no_gold_articles": {
+     "bucket": "no_gold_articles",
+     "n": 6,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    }
+   },
+   "coverage": {
+    "stratifiable": 24,
+    "total": 30
+   },
+   "buckets_from": "v2_vanillaj_criminal",
+   "verdicts_from": "v2_vanillaj_criminal",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-11-06T22:43:33.199035+00:00",
+   "label": "Criminal benchmark",
+   "grounded_set": "v2_criminal"
+  },
+  "v2_vanillaj_admin": {
+   "n": 38,
+   "n_judged_correctness": 33,
+   "correctness": [
+    0.42727272727272725,
+    0.3181818181818182,
+    0.5333333333333333
+   ],
+   "faithfulness": [
+    0.8330909090909091,
+    0.7280909090909091,
+    0.9273333333333333
+   ],
+   "pass_rate": [
+    0.02631578947368421,
+    0.0,
+    0.07894736842105263
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.02631578947368421,
+    0.0,
+    0.07894736842105263
+   ],
+   "passes": 1,
+   "passes_from_refusals": 0,
+   "refusal_FP": 0,
+   "refusal_FN": 5,
+   "refusal_TP": 0,
+   "cited": 0,
+   "checkable": 0,
+   "supported": 0,
+   "unsupported": 0,
+   "not_found": 0,
+   "unverifiable": 0,
+   "range_or_list": 0,
+   "precision_checkable": NaN,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 7,
+     "pass_rate": [
+      0.14285714285714285,
+      0.0,
+      0.42857142857142855
+     ],
+     "faithfulness": [
+      0.8657142857142858,
+      0.7157142857142857,
+      0.9842857142857143
+     ],
+     "correctness": [
+      0.6142857142857143,
+      0.35714285714285715,
+      0.8285714285714286
+     ],
+     "citation_accuracy": [
+      0.9285714285714286,
+      0.7857142857142857,
+      1.0
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 1,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "refusals": 0
+    },
+    "zero_recall": {
+     "bucket": "zero_recall",
+     "n": 24,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.815625,
+      0.67575,
+      0.93425
+     ],
+     "correctness": [
+      0.3666666666666667,
+      0.24583333333333335,
+      0.49583333333333335
+     ],
+     "citation_accuracy": [
+      0.2847222222222222,
+      0.125,
+      0.4652777777777778
+     ],
+     "refusals": 0
+    },
+    "no_gold_articles": {
+     "bucket": "no_gold_articles",
+     "n": 6,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.857,
+      0.857,
+      0.857
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "refusals": 0
+    }
+   },
+   "coverage": {
+    "stratifiable": 32,
+    "total": 38
+   },
+   "buckets_from": "v2_vanillaj_admin",
+   "verdicts_from": "v2_vanillaj_admin",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-11-06T22:52:05.123699+00:00",
+   "label": "Admin/tax benchmark",
+   "grounded_set": "v2_admin"
+  },
+  "v2_vanillaj_interpelli_lavoro": {
+   "n": 23,
+   "n_judged_correctness": 23,
+   "correctness": [
+    0.6086956521739131,
+    0.4739130434782609,
+    0.7434782608695653
+   ],
+   "faithfulness": [
+    0.8686956521739131,
+    0.7878260869565218,
+    0.9430434782608696
+   ],
+   "pass_rate": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "pass_rate_no_refusal_credit": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "passes": 0,
+   "passes_from_refusals": 0,
+   "refusal_FP": 0,
+   "refusal_FN": 0,
+   "refusal_TP": 0,
+   "cited": 0,
+   "checkable": 0,
+   "supported": 0,
+   "unsupported": 0,
+   "not_found": 0,
+   "unverifiable": 0,
+   "range_or_list": 0,
+   "precision_checkable": NaN,
+   "buckets": {
+    "full_recall": {
+     "bucket": "full_recall",
+     "n": 1,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "correctness": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "citation_accuracy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "refusals": 0
+    },
+    "partial_recall": {
+     "bucket": "partial_recall",
+     "n": 22,
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "faithfulness": [
+      0.8627272727272728,
+      0.7731818181818182,
+      0.9427272727272727
+     ],
+     "correctness": [
+      0.6136363636363636,
+      0.4818181818181818,
+      0.759090909090909
+     ],
+     "citation_accuracy": [
+      0.09090909090909091,
+      0.0,
+      0.22727272727272727
+     ],
+     "refusals": 0
+    }
+   },
+   "coverage": {
+    "stratifiable": 23,
+    "total": 23
+   },
+   "buckets_from": "v2_vanillaj_interpelli_lavoro",
+   "verdicts_from": "v2_vanillaj_interpelli_lavoro",
+   "judge": "anthropic/claude-sonnet-4.6",
+   "harness": "fbw-eval 0.1.0.dev0",
+   "generated": "2026-11-06T22:57:38.806334+00:00",
+   "label": "Labour interpelli, practice in corpus",
+   "grounded_set": "v2_interpelli_lavoro_prassi"
+  }
+ },
+ "frontier": {
+  "v2_frontier_trib2026": {
+   "label": "Tax interpelli 2026 (authority-answered, $n{=}111$, ground truth post-dates training)",
+   "n": 111,
+   "systems": {
+    "v2_trib2026_prassi": {
+     "n": 111,
+     "n_judged_correctness": 111,
+     "correctness": [
+      0.5463963963963964,
+      0.4864864864864865,
+      0.609009009009009
+     ],
+     "faithfulness": [
+      0.9084984984984985,
+      0.8841891891891892,
+      0.9328228228228228
+     ],
+     "pass_rate": [
+      0.15315315315315314,
+      0.09009009009009009,
+      0.21621621621621623
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.15315315315315314,
+      0.09009009009009009,
+      0.21621621621621623
+     ],
+     "passes": 17,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 0,
+     "refusal_TP": 0,
+     "cited": 119,
+     "checkable": 118,
+     "supported": 84,
+     "unsupported": 34,
+     "not_found": 0,
+     "unverifiable": 0,
+     "range_or_list": 1,
+     "precision_checkable": 0.711864406779661,
+     "buckets": {
+      "full_recall": {
+       "bucket": "full_recall",
+       "n": 3,
+       "pass_rate": [
+        0.3333333333333333,
+        0.0,
+        1.0
+       ],
+       "faithfulness": [
+        0.8066666666666666,
+        0.71,
+        1.0
+       ],
+       "correctness": [
+        0.4166666666666667,
+        0.0,
+        0.75
+       ],
+       "citation_accuracy": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "refusals": 0
+      },
+      "partial_recall": {
+       "bucket": "partial_recall",
+       "n": 106,
+       "pass_rate": [
+        0.1509433962264151,
+        0.08490566037735849,
+        0.2169811320754717
+       ],
+       "faithfulness": [
+        0.9137106918238994,
+        0.8873270440251573,
+        0.9379402515723271
+       ],
+       "correctness": [
+        0.5537735849056604,
+        0.4877358490566038,
+        0.6160377358490566
+       ],
+       "citation_accuracy": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "refusals": 0
+      },
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 2,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.7849999999999999,
+        0.57,
+        1.0
+       ],
+       "correctness": [
+        0.35,
+        0.2,
+        0.5
+       ],
+       "citation_accuracy": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 111,
+      "total": 111
+     },
+     "buckets_from": "v2_trib2026_prassi",
+     "verdicts_from": "v2_trib2026_prassi",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-20T10:11:33.169320+00:00",
+     "label": "grounded",
+     "ground_truth": "official reply",
+     "model": "gpt-4o-mini + retrieval"
+    },
+    "v2_frontier_trib2026/chatgpt": {
+     "n": 111,
+     "n_judged_correctness": 111,
+     "correctness": [
+      0.3810810810810811,
+      0.3207207207207207,
+      0.44144144144144143
+     ],
+     "faithfulness": [
+      0.02045045045045045,
+      0.01072072072072072,
+      0.031621621621621625
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 0,
+     "refusal_TP": 0,
+     "cited": 555,
+     "checkable": 232,
+     "supported": 132,
+     "unsupported": 100,
+     "not_found": 4,
+     "unverifiable": 293,
+     "range_or_list": 26,
+     "precision_checkable": 0.5689655172413793,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 111,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.02045045045045045,
+        0.010630630630630631,
+        0.03099099099099099
+       ],
+       "correctness": [
+        0.3810810810810811,
+        0.31891891891891894,
+        0.43963963963963965
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 111,
+      "total": 111
+     },
+     "buckets_from": "v2_frontier_trib2026/chatgpt",
+     "verdicts_from": "v2_frontier_trib2026/chatgpt",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-26T16:58:23.594171+00:00",
+     "label": "GPT-5.1",
+     "model": "openai/gpt-5.1"
+    },
+    "v2_frontier_trib2026/claude": {
+     "n": 111,
+     "n_judged_correctness": 111,
+     "correctness": [
+      0.40540540540540543,
+      0.3441441441441442,
+      0.46396396396396394
+     ],
+     "faithfulness": [
+      0.0024954954954954957,
+      0.0,
+      0.006522522522522522
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 0,
+     "refusal_TP": 0,
+     "cited": 789,
+     "checkable": 229,
+     "supported": 159,
+     "unsupported": 70,
+     "not_found": 36,
+     "unverifiable": 513,
+     "range_or_list": 11,
+     "precision_checkable": 0.6943231441048034,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 111,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0024954954954954957,
+        0.0,
+        0.006522522522522523
+       ],
+       "correctness": [
+        0.40540540540540543,
+        0.34594594594594597,
+        0.4657657657657658
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 111,
+      "total": 111
+     },
+     "buckets_from": "v2_frontier_trib2026/claude",
+     "verdicts_from": "v2_frontier_trib2026/claude",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-26T17:23:46.097534+00:00",
+     "label": "Claude Sonnet 4.6",
+     "model": "anthropic/claude-sonnet-4.6"
+    },
+    "v2_frontier_trib2026/gemini": {
+     "n": 111,
+     "n_judged_correctness": 111,
+     "correctness": [
+      0.322972972972973,
+      0.26306306306306304,
+      0.38738738738738737
+     ],
+     "faithfulness": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 0,
+     "refusal_TP": 0,
+     "cited": 26,
+     "checkable": 11,
+     "supported": 5,
+     "unsupported": 6,
+     "not_found": 1,
+     "unverifiable": 14,
+     "range_or_list": 0,
+     "precision_checkable": 0.45454545454545453,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 111,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        0.32297297297297295,
+        0.26036036036036037,
+        0.3864864864864865
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 111,
+      "total": 111
+     },
+     "buckets_from": "v2_frontier_trib2026/gemini",
+     "verdicts_from": "v2_frontier_trib2026/gemini",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-26T17:45:09.384534+00:00",
+     "label": "Gemini 2.5 Pro",
+     "model": "google/gemini-2.5-pro"
+    },
+    "v2_frontier_trib2026/perplexity": {
+     "n": 111,
+     "n_judged_correctness": 110,
+     "correctness": [
+      0.6877272727272727,
+      0.6277272727272727,
+      0.744090909090909
+     ],
+     "faithfulness": [
+      0.08632432432432433,
+      0.048594594594594594,
+      0.13186486486486487
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 1,
+     "refusal_FN": 0,
+     "refusal_TP": 0,
+     "cited": 371,
+     "checkable": 90,
+     "supported": 71,
+     "unsupported": 19,
+     "not_found": 14,
+     "unverifiable": 259,
+     "range_or_list": 8,
+     "precision_checkable": 0.7888888888888889,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 111,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.08632432432432433,
+        0.04886486486486487,
+        0.13078378378378377
+       ],
+       "correctness": [
+        0.6877272727272727,
+        0.6286363636363637,
+        0.7477272727272727
+       ],
+       "citation_accuracy": [
+        0.009009009009009009,
+        0.0,
+        0.02702702702702703
+       ],
+       "refusals": 1
+      }
+     },
+     "coverage": {
+      "stratifiable": 111,
+      "total": 111
+     },
+     "buckets_from": "v2_frontier_trib2026/perplexity",
+     "verdicts_from": "v2_frontier_trib2026/perplexity",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-26T17:57:12.474631+00:00",
+     "label": "Perplexity sonar-pro (web)",
+     "model": "perplexity/sonar-pro"
+    }
+   }
+  },
+  "v2_frontier_admin": {
+   "label": "Admin/tax benchmark ($n{=}38$)",
+   "n": 38,
+   "systems": {
+    "v2_admin": {
+     "n": 38,
+     "n_judged_correctness": 33,
+     "correctness": [
+      0.7803030303030303,
+      0.7000000000000001,
+      0.8515151515151516
+     ],
+     "faithfulness": [
+      0.9398484848484848,
+      0.9156060606060606,
+      0.961969696969697
+     ],
+     "pass_rate": [
+      0.23684210526315788,
+      0.10526315789473684,
+      0.3684210526315789
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.15789473684210525,
+      0.05263157894736842,
+      0.2894736842105263
+     ],
+     "passes": 9,
+     "passes_from_refusals": 3,
+     "refusal_FP": 0,
+     "refusal_FN": 2,
+     "refusal_TP": 3,
+     "cited": 88,
+     "checkable": 78,
+     "supported": 65,
+     "unsupported": 13,
+     "not_found": 1,
+     "unverifiable": 5,
+     "range_or_list": 4,
+     "precision_checkable": 0.8333333333333334,
+     "buckets": {
+      "full_recall": {
+       "bucket": "full_recall",
+       "n": 23,
+       "pass_rate": [
+        0.17391304347826086,
+        0.043478260869565216,
+        0.34782608695652173
+       ],
+       "faithfulness": [
+        0.9293478260869565,
+        0.8997826086956522,
+        0.9584782608695652
+       ],
+       "correctness": [
+        0.8173913043478261,
+        0.7217391304347827,
+        0.9043478260869565
+       ],
+       "citation_accuracy": [
+        0.9333333333333333,
+        0.8623188405797101,
+        0.991304347826087
+       ],
+       "refusals": 0
+      },
+      "partial_recall": {
+       "bucket": "partial_recall",
+       "n": 4,
+       "pass_rate": [
+        0.5,
+        0.0,
+        1.0
+       ],
+       "faithfulness": [
+        0.9775,
+        0.9325,
+        1.0
+       ],
+       "correctness": [
+        0.6125,
+        0.5,
+        0.725
+       ],
+       "citation_accuracy": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "refusals": 0
+      },
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 5,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.946,
+        0.878,
+        1.0
+       ],
+       "correctness": [
+        0.76,
+        0.56,
+        0.96
+       ],
+       "citation_accuracy": [
+        0.9,
+        0.7,
+        1.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 6,
+       "pass_rate": [
+        0.5,
+        0.16666666666666666,
+        0.8333333333333334
+       ],
+       "faithfulness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "correctness": [
+        0.7,
+        0.7,
+        0.7
+       ],
+       "citation_accuracy": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "refusals": 3
+      }
+     },
+     "coverage": {
+      "stratifiable": 32,
+      "total": 38
+     },
+     "buckets_from": "v2_admin_anchor59",
+     "verdicts_from": "v2_admin",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T00:01:18.230423+00:00",
+     "label": "grounded",
+     "ground_truth": "LLM-drafted, anchored",
+     "model": "gpt-4o-mini + retrieval"
+    },
+    "v2_frontier_admin/chatgpt": {
+     "n": 38,
+     "n_judged_correctness": 33,
+     "correctness": [
+      0.9257575757575758,
+      0.8651515151515152,
+      0.9787878787878787
+     ],
+     "faithfulness": [
+      0.002727272727272727,
+      0.0,
+      0.008181818181818182
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 310,
+     "checkable": 181,
+     "supported": 122,
+     "unsupported": 59,
+     "not_found": 8,
+     "unverifiable": 95,
+     "range_or_list": 26,
+     "precision_checkable": 0.6740331491712708,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 32,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0028125,
+        0.0,
+        0.0084375
+       ],
+       "correctness": [
+        0.9234375,
+        0.8609375,
+        0.978125
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 6,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 32,
+      "total": 38
+     },
+     "buckets_from": "v2_frontier_admin/chatgpt",
+     "verdicts_from": "v2_frontier_admin/chatgpt",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T21:19:01.301377+00:00",
+     "label": "GPT-5.1",
+     "model": "openai/gpt-5.1"
+    },
+    "v2_frontier_admin/claude": {
+     "n": 38,
+     "n_judged_correctness": 33,
+     "correctness": [
+      0.9848484848484849,
+      0.9545454545454546,
+      1.0
+     ],
+     "faithfulness": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 273,
+     "checkable": 145,
+     "supported": 83,
+     "unsupported": 62,
+     "not_found": 3,
+     "unverifiable": 108,
+     "range_or_list": 17,
+     "precision_checkable": 0.5724137931034483,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 32,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        0.984375,
+        0.953125,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 6,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 32,
+      "total": 38
+     },
+     "buckets_from": "v2_frontier_admin/claude",
+     "verdicts_from": "v2_frontier_admin/claude",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T21:30:13.529385+00:00",
+     "label": "Claude Sonnet 4.6",
+     "model": "anthropic/claude-sonnet-4.6"
+    },
+    "v2_frontier_admin/gemini": {
+     "n": 38,
+     "n_judged_correctness": 33,
+     "correctness": [
+      0.9090909090909091,
+      0.803030303030303,
+      0.9848484848484849
+     ],
+     "faithfulness": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 13,
+     "checkable": 5,
+     "supported": 4,
+     "unsupported": 1,
+     "not_found": 1,
+     "unverifiable": 7,
+     "range_or_list": 0,
+     "precision_checkable": 0.8,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 32,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        0.90625,
+        0.8125,
+        0.984375
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 6,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 32,
+      "total": 38
+     },
+     "buckets_from": "v2_frontier_admin/gemini",
+     "verdicts_from": "v2_frontier_admin/gemini",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T21:39:05.102698+00:00",
+     "label": "Gemini 2.5 Pro",
+     "model": "google/gemini-2.5-pro"
+    },
+    "v2_frontier_admin/perplexity": {
+     "n": 38,
+     "n_judged_correctness": 33,
+     "correctness": [
+      0.9272727272727274,
+      0.8606060606060606,
+      0.9787878787878787
+     ],
+     "faithfulness": [
+      0.10606060606060606,
+      0.035454545454545454,
+      0.1921212121212121
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 129,
+     "checkable": 36,
+     "supported": 25,
+     "unsupported": 11,
+     "not_found": 0,
+     "unverifiable": 91,
+     "range_or_list": 2,
+     "precision_checkable": 0.6944444444444444,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 32,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.109375,
+        0.04,
+        0.1978125
+       ],
+       "correctness": [
+        0.93125,
+        0.86875,
+        0.984375
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 6,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        0.8,
+        0.8,
+        0.8
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 32,
+      "total": 38
+     },
+     "buckets_from": "v2_frontier_admin/perplexity",
+     "verdicts_from": "v2_frontier_admin/perplexity",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T21:42:01.772837+00:00",
+     "label": "Perplexity sonar-pro (web)",
+     "model": "perplexity/sonar-pro"
+    }
+   }
+  },
+  "v2_frontier_labor_v3": {
+   "label": "Labour benchmark ($n{=}78$)",
+   "n": 78,
+   "systems": {
+    "v2_labor_v3": {
+     "n": 78,
+     "n_judged_correctness": 72,
+     "correctness": [
+      0.7458333333333333,
+      0.6680555555555556,
+      0.8152777777777778
+     ],
+     "faithfulness": [
+      0.8991767123287671,
+      0.8564205479452055,
+      0.9384931506849316
+     ],
+     "pass_rate": [
+      0.358974358974359,
+      0.2564102564102564,
+      0.46153846153846156
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.3333333333333333,
+      0.23076923076923078,
+      0.44871794871794873
+     ],
+     "passes": 28,
+     "passes_from_refusals": 2,
+     "refusal_FP": 1,
+     "refusal_FN": 3,
+     "refusal_TP": 2,
+     "cited": 121,
+     "checkable": 113,
+     "supported": 95,
+     "unsupported": 18,
+     "not_found": 3,
+     "unverifiable": 3,
+     "range_or_list": 2,
+     "precision_checkable": 0.8407079646017699,
+     "buckets": {
+      "full_recall": {
+       "bucket": "full_recall",
+       "n": 58,
+       "pass_rate": [
+        0.4482758620689655,
+        0.3275862068965517,
+        0.5862068965517241
+       ],
+       "faithfulness": [
+        0.9460551724137931,
+        0.9181810344827587,
+        0.9717534482758621
+       ],
+       "correctness": [
+        0.8301724137931035,
+        0.7612068965517241,
+        0.8922413793103449
+       ],
+       "citation_accuracy": [
+        0.9511494252873564,
+        0.8994252873563219,
+        0.9913793103448276
+       ],
+       "refusals": 0
+      },
+      "partial_recall": {
+       "bucket": "partial_recall",
+       "n": 2,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "correctness": [
+        0.725,
+        0.7,
+        0.75
+       ],
+       "citation_accuracy": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "refusals": 0
+      },
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 11,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.6753363636363636,
+        0.5157636363636364,
+        0.8295818181818182
+       ],
+       "correctness": [
+        0.33,
+        0.13,
+        0.5599999999999999
+       ],
+       "citation_accuracy": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "refusals": 1
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 7,
+       "pass_rate": [
+        0.2857142857142857,
+        0.0,
+        0.7142857142857143
+       ],
+       "faithfulness": [
+        0.67,
+        0.43,
+        0.91
+       ],
+       "correctness": [
+        0.4,
+        0.3,
+        0.5
+       ],
+       "citation_accuracy": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "refusals": 2
+      }
+     },
+     "coverage": {
+      "stratifiable": 71,
+      "total": 78
+     },
+     "buckets_from": "v2_labor_v3_anchor59",
+     "verdicts_from": "v2_labor_v3_anchor59",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T00:01:17.463399+00:00",
+     "label": "grounded",
+     "ground_truth": "LLM-drafted, anchored",
+     "model": "gpt-4o-mini + retrieval"
+    },
+    "v2_frontier_labor_v3/chatgpt": {
+     "n": 78,
+     "n_judged_correctness": 73,
+     "correctness": [
+      0.571917808219178,
+      0.4958904109589041,
+      0.6541095890410958
+     ],
+     "faithfulness": [
+      0.00821917808219178,
+      0.0,
+      0.020136986301369862
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 344,
+     "checkable": 135,
+     "supported": 66,
+     "unsupported": 69,
+     "not_found": 3,
+     "unverifiable": 182,
+     "range_or_list": 24,
+     "precision_checkable": 0.4888888888888889,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 71,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.008450704225352112,
+        0.0,
+        0.01915492957746479
+       ],
+       "correctness": [
+        0.5598591549295775,
+        0.47464788732394364,
+        0.6373239436619719
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 7,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 71,
+      "total": 78
+     },
+     "buckets_from": "v2_frontier_labor_v3/chatgpt",
+     "verdicts_from": "v2_frontier_labor_v3/chatgpt",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T01:38:48.447338+00:00",
+     "label": "GPT-5.1",
+     "model": "openai/gpt-5.1"
+    },
+    "v2_frontier_labor_v3/claude": {
+     "n": 78,
+     "n_judged_correctness": 73,
+     "correctness": [
+      0.6554794520547945,
+      0.5794520547945206,
+      0.7308219178082191
+     ],
+     "faithfulness": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 282,
+     "checkable": 117,
+     "supported": 59,
+     "unsupported": 58,
+     "not_found": 3,
+     "unverifiable": 147,
+     "range_or_list": 15,
+     "precision_checkable": 0.5042735042735043,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 71,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        0.645774647887324,
+        0.5676056338028169,
+        0.7246478873239437
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 7,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 71,
+      "total": 78
+     },
+     "buckets_from": "v2_frontier_labor_v3/claude",
+     "verdicts_from": "v2_frontier_labor_v3/claude",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T01:50:28.153190+00:00",
+     "label": "Claude Sonnet 4.6",
+     "model": "anthropic/claude-sonnet-4.6"
+    },
+    "v2_frontier_labor_v3/gemini": {
+     "n": 78,
+     "n_judged_correctness": 73,
+     "correctness": [
+      0.667123287671233,
+      0.5876712328767123,
+      0.7465753424657534
+     ],
+     "faithfulness": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 18,
+     "checkable": 10,
+     "supported": 6,
+     "unsupported": 4,
+     "not_found": 1,
+     "unverifiable": 7,
+     "range_or_list": 0,
+     "precision_checkable": 0.6,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 71,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        0.6577464788732394,
+        0.5788732394366197,
+        0.7380281690140845
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 7,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 71,
+      "total": 78
+     },
+     "buckets_from": "v2_frontier_labor_v3/gemini",
+     "verdicts_from": "v2_frontier_labor_v3/gemini",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T02:00:53.293829+00:00",
+     "label": "Gemini 2.5 Pro",
+     "model": "google/gemini-2.5-pro"
+    },
+    "v2_frontier_labor_v3/perplexity": {
+     "n": 78,
+     "n_judged_correctness": 73,
+     "correctness": [
+      0.8178082191780822,
+      0.7534246575342466,
+      0.8767123287671232
+     ],
+     "faithfulness": [
+      0.03835616438356164,
+      0.00684931506849315,
+      0.07397260273972603
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 158,
+     "checkable": 20,
+     "supported": 17,
+     "unsupported": 3,
+     "not_found": 3,
+     "unverifiable": 135,
+     "range_or_list": 0,
+     "precision_checkable": 0.85,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 71,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.03943661971830986,
+        0.007042253521126761,
+        0.07887323943661972
+       ],
+       "correctness": [
+        0.819718309859155,
+        0.7535211267605634,
+        0.8802816901408451
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 7,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        0.75,
+        0.5,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 71,
+      "total": 78
+     },
+     "buckets_from": "v2_frontier_labor_v3/perplexity",
+     "verdicts_from": "v2_frontier_labor_v3/perplexity",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T02:07:01.673952+00:00",
+     "label": "Perplexity sonar-pro (web)",
+     "model": "perplexity/sonar-pro"
+    }
+   }
+  },
+  "v2_frontier_criminal": {
+   "label": "Criminal benchmark ($n{=}30$)",
+   "n": 30,
+   "systems": {
+    "v2_criminal": {
+     "n": 30,
+     "n_judged_correctness": 25,
+     "correctness": [
+      0.72,
+      0.632,
+      0.82
+     ],
+     "faithfulness": [
+      0.8144,
+      0.7140000000000001,
+      0.8981999999999999
+     ],
+     "pass_rate": [
+      0.26666666666666666,
+      0.1,
+      0.43333333333333335
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.13333333333333333,
+      0.03333333333333333,
+      0.26666666666666666
+     ],
+     "passes": 8,
+     "passes_from_refusals": 4,
+     "refusal_FP": 0,
+     "refusal_FN": 1,
+     "refusal_TP": 4,
+     "cited": 69,
+     "checkable": 63,
+     "supported": 47,
+     "unsupported": 16,
+     "not_found": 1,
+     "unverifiable": 5,
+     "range_or_list": 0,
+     "precision_checkable": 0.746031746031746,
+     "buckets": {
+      "full_recall": {
+       "bucket": "full_recall",
+       "n": 21,
+       "pass_rate": [
+        0.19047619047619047,
+        0.047619047619047616,
+        0.38095238095238093
+       ],
+       "faithfulness": [
+        0.8038095238095239,
+        0.6897619047619048,
+        0.8988095238095238
+       ],
+       "correctness": [
+        0.7523809523809524,
+        0.6428571428571429,
+        0.8571428571428571
+       ],
+       "citation_accuracy": [
+        0.9523809523809523,
+        0.8690476190476191,
+        1.0
+       ],
+       "refusals": 0
+      },
+      "partial_recall": {
+       "bucket": "partial_recall",
+       "n": 1,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.55,
+        0.55,
+        0.55
+       ],
+       "correctness": [
+        0.7,
+        0.7,
+        0.7
+       ],
+       "citation_accuracy": [
+        0.5,
+        0.5,
+        0.5
+       ],
+       "refusals": 0
+      },
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 2,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.9650000000000001,
+        0.93,
+        1.0
+       ],
+       "correctness": [
+        0.5,
+        0.5,
+        0.5
+       ],
+       "citation_accuracy": [
+        0.5,
+        0.0,
+        1.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 6,
+       "pass_rate": [
+        0.6666666666666666,
+        0.3333333333333333,
+        1.0
+       ],
+       "faithfulness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "correctness": [
+        0.5,
+        0.5,
+        0.5
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 4
+      }
+     },
+     "coverage": {
+      "stratifiable": 24,
+      "total": 30
+     },
+     "buckets_from": "v2_criminal_anchor59",
+     "verdicts_from": "v2_criminal",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-29T00:01:17.808776+00:00",
+     "label": "grounded",
+     "ground_truth": "LLM-drafted, anchored",
+     "model": "gpt-4o-mini + retrieval"
+    },
+    "v2_frontier_criminal/chatgpt": {
+     "n": 30,
+     "n_judged_correctness": 25,
+     "correctness": [
+      0.9079999999999999,
+      0.836,
+      0.968
+     ],
+     "faithfulness": [
+      0.015,
+      0.0,
+      0.045
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 240,
+     "checkable": 153,
+     "supported": 81,
+     "unsupported": 72,
+     "not_found": 0,
+     "unverifiable": 50,
+     "range_or_list": 37,
+     "precision_checkable": 0.5294117647058824,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 24,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.015625,
+        0.0,
+        0.046875
+       ],
+       "correctness": [
+        0.9041666666666667,
+        0.8333333333333334,
+        0.9666666666666667
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 6,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 24,
+      "total": 30
+     },
+     "buckets_from": "v2_frontier_criminal/chatgpt",
+     "verdicts_from": "v2_frontier_criminal/chatgpt",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-30T18:07:40.858852+00:00",
+     "label": "GPT-5.1",
+     "model": "openai/gpt-5.1"
+    },
+    "v2_frontier_criminal/claude": {
+     "n": 30,
+     "n_judged_correctness": 25,
+     "correctness": [
+      0.9279999999999999,
+      0.856,
+      0.988
+     ],
+     "faithfulness": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 199,
+     "checkable": 141,
+     "supported": 85,
+     "unsupported": 56,
+     "not_found": 1,
+     "unverifiable": 39,
+     "range_or_list": 18,
+     "precision_checkable": 0.6028368794326241,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 24,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        0.925,
+        0.85,
+        0.9875
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 6,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 24,
+      "total": 30
+     },
+     "buckets_from": "v2_frontier_criminal/claude",
+     "verdicts_from": "v2_frontier_criminal/claude",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-30T18:17:02.127114+00:00",
+     "label": "Claude Sonnet 4.6",
+     "model": "anthropic/claude-sonnet-4.6"
+    },
+    "v2_frontier_criminal/gemini": {
+     "n": 30,
+     "n_judged_correctness": 25,
+     "correctness": [
+      0.94,
+      0.88,
+      1.0
+     ],
+     "faithfulness": [
+      0.00268,
+      0.0,
+      0.00804
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 18,
+     "checkable": 15,
+     "supported": 8,
+     "unsupported": 7,
+     "not_found": 0,
+     "unverifiable": 3,
+     "range_or_list": 0,
+     "precision_checkable": 0.5333333333333333,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 24,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0027916666666666667,
+        0.0,
+        0.008375
+       ],
+       "correctness": [
+        0.9375,
+        0.875,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 6,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 24,
+      "total": 30
+     },
+     "buckets_from": "v2_frontier_criminal/gemini",
+     "verdicts_from": "v2_frontier_criminal/gemini",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-30T18:25:30.965264+00:00",
+     "label": "Gemini 2.5 Pro",
+     "model": "google/gemini-2.5-pro"
+    },
+    "v2_frontier_criminal/perplexity": {
+     "n": 30,
+     "n_judged_correctness": 25,
+     "correctness": [
+      0.9279999999999999,
+      0.8640000000000001,
+      0.98
+     ],
+     "faithfulness": [
+      0.20071999999999998,
+      0.06952,
+      0.35432
+     ],
+     "pass_rate": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "pass_rate_no_refusal_credit": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "passes": 0,
+     "passes_from_refusals": 0,
+     "refusal_FP": 0,
+     "refusal_FN": 5,
+     "refusal_TP": 0,
+     "cited": 110,
+     "checkable": 33,
+     "supported": 19,
+     "unsupported": 14,
+     "not_found": 1,
+     "unverifiable": 71,
+     "range_or_list": 5,
+     "precision_checkable": 0.5757575757575758,
+     "buckets": {
+      "zero_recall": {
+       "bucket": "zero_recall",
+       "n": 24,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.20908333333333334,
+        0.07416666666666667,
+        0.36225
+       ],
+       "correctness": [
+        0.925,
+        0.8583333333333333,
+        0.9791666666666666
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      },
+      "no_gold_articles": {
+       "bucket": "no_gold_articles",
+       "n": 6,
+       "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "correctness": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "refusals": 0
+      }
+     },
+     "coverage": {
+      "stratifiable": 24,
+      "total": 30
+     },
+     "buckets_from": "v2_frontier_criminal/perplexity",
+     "verdicts_from": "v2_frontier_criminal/perplexity",
+     "judge": "anthropic/claude-sonnet-4.6",
+     "harness": "fbw-eval 0.1.0.dev0",
+     "generated": "2026-10-30T18:28:31.896819+00:00",
+     "label": "Perplexity sonar-pro (web)",
+     "model": "perplexity/sonar-pro"
+    }
+   }
+  }
+ },
+ "judge_swap": {
+  "v2_labor_v3": {
+   "set": "Labour benchmark",
+   "system": "grounded",
+   "n": 78,
+   "sonnet": {
+    "pass_rate": [
+     0.358974358974359,
+     0.2564102564102564,
+     0.46153846153846156
+    ],
+    "correctness": [
+     0.7458333333333333,
+     0.6680555555555556,
+     0.8152777777777778
+    ],
+    "faithfulness": [
+     0.8991767123287671,
+     0.8564205479452055,
+     0.9384931506849316
+    ]
+   },
+   "gpt4omini": {
+    "pass_rate": [
+     0.7435897435897436,
+     0.6410256410256411,
+     0.8333333333333334
+    ],
+    "correctness": [
+     0.8680555555555556,
+     0.7916666666666666,
+     0.9305555555555556
+    ],
+    "faithfulness": [
+     0.9945205479452054,
+     0.9835616438356164,
+     1.0
+    ]
+   },
+   "metis_literal_pass": 0.7179,
+   "metis_file": "eval_report_2026-11-06_22-43.json"
+  },
+  "v2_vanilla_labor_v3": {
+   "set": null,
+   "system": "vanilla",
+   "n": 78,
+   "sonnet": {
+    "pass_rate": [
+     0.16666666666666666,
+     0.08974358974358974,
+     0.2564102564102564
+    ],
+    "correctness": [
+     0.6438356164383562,
+     0.5602739726027397,
+     0.7273972602739727
+    ],
+    "faithfulness": [
+     0.8501054794520547,
+     0.7969369863013699,
+     0.8960780821917809
+    ]
+   },
+   "gpt4omini": {
+    "pass_rate": [
+     0.44871794871794873,
+     0.34615384615384615,
+     0.5512820512820513
+    ],
+    "correctness": [
+     0.773972602739726,
+     0.6917808219178082,
+     0.863013698630137
+    ],
+    "faithfulness": [
+     0.9793211350293541,
+     0.9448140900195695,
+     0.9980430528375734
+    ]
+   },
+   "metis_literal_pass": 0.3718,
+   "metis_file": "eval_report_2026-11-06_22-57.json"
+  },
+  "v2_criminal": {
+   "set": "Criminal benchmark",
+   "system": "grounded",
+   "n": 30,
+   "sonnet": {
+    "pass_rate": [
+     0.26666666666666666,
+     0.1,
+     0.43333333333333335
+    ],
+    "correctness": [
+     0.72,
+     0.632,
+     0.82
+    ],
+    "faithfulness": [
+     0.8144,
+     0.7140000000000001,
+     0.8981999999999999
+    ]
+   },
+   "gpt4omini": {
+    "pass_rate": [
+     0.6333333333333333,
+     0.4666666666666667,
+     0.8
+    ],
+    "correctness": [
+     0.88,
+     0.78,
+     0.96
+    ],
+    "faithfulness": [
+     0.976,
+     0.9520000000000001,
+     1.0
+    ]
+   },
+   "metis_literal_pass": 0.6667,
+   "metis_file": "eval_report_2026-11-06_22-50.json"
+  },
+  "v2_vanilla_criminal": {
+   "set": null,
+   "system": "vanilla",
+   "n": 30,
+   "sonnet": {
+    "pass_rate": [
+     0.03333333333333333,
+     0.0,
+     0.1
+    ],
+    "correctness": [
+     0.53,
+     0.40399999999999997,
+     0.648
+    ],
+    "faithfulness": [
+     0.8892,
+     0.7684000000000001,
+     0.9764
+    ]
+   },
+   "gpt4omini": {
+    "pass_rate": [
+     0.26666666666666666,
+     0.1,
+     0.43333333333333335
+    ],
+    "correctness": [
+     0.58,
+     0.44,
+     0.72
+    ],
+    "faithfulness": [
+     0.9279999999999999,
+     0.8320000000000001,
+     0.992
+    ]
+   },
+   "metis_literal_pass": 0.2333,
+   "metis_file": "eval_report_2026-11-06_23-01.json"
+  },
+  "v2_admin": {
+   "set": "Admin/tax benchmark",
+   "system": "grounded",
+   "n": 38,
+   "sonnet": {
+    "pass_rate": [
+     0.23684210526315788,
+     0.10526315789473684,
+     0.3684210526315789
+    ],
+    "correctness": [
+     0.7803030303030303,
+     0.7000000000000001,
+     0.8515151515151516
+    ],
+    "faithfulness": [
+     0.9398484848484848,
+     0.9156060606060606,
+     0.961969696969697
+    ]
+   },
+   "gpt4omini": {
+    "pass_rate": [
+     0.631578947368421,
+     0.47368421052631576,
+     0.7894736842105263
+    ],
+    "correctness": [
+     0.8939393939393939,
+     0.8181818181818182,
+     0.9545454545454546
+    ],
+    "faithfulness": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "metis_literal_pass": 0.5526,
+   "metis_file": "eval_report_2026-11-06_23-00.json"
+  },
+  "v2_vanilla_admin": {
+   "set": null,
+   "system": "vanilla",
+   "n": 38,
+   "sonnet": {
+    "pass_rate": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "correctness": [
+     0.4590909090909091,
+     0.3545454545454545,
+     0.5712121212121213
+    ],
+    "faithfulness": [
+     0.8593333333333334,
+     0.7603939393939394,
+     0.936060606060606
+    ]
+   },
+   "gpt4omini": {
+    "pass_rate": [
+     0.13157894736842105,
+     0.02631578947368421,
+     0.23684210526315788
+    ],
+    "correctness": [
+     0.5606060606060606,
+     0.45454545454545453,
+     0.6515151515151515
+    ],
+    "faithfulness": [
+     0.9393939393939394,
+     0.8484848484848485,
+     1.0
+    ]
+   },
+   "metis_literal_pass": 0.0789,
+   "metis_file": "eval_report_2026-11-06_23-08.json"
+  }
+ }
+}

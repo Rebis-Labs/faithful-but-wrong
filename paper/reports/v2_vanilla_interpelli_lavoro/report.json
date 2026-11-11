@@ -1,0 +1,682 @@
+{
+  "generated": "2026-11-06T22:19:00.650300+00:00",
+  "meta": {
+    "gold": "docs/paper_v2/reports/v2_interpelli_lavoro_prassi/gold.jsonl",
+    "outputs": "eval/reports/fbw/v2/v2_vanilla_interpelli_lavoro/outputs.jsonl",
+    "judge": "anthropic/claude-sonnet-4.6",
+    "judge calls": 138,
+    "harness": "fbw-eval 0.1.0.dev0",
+    "thresholds": {
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.85,
+      "context_relevancy": 0.8,
+      "citation_accuracy": 0.9,
+      "correctness": null
+    },
+    "seed": 2026,
+    "citation parser": "built-in [Source: …] tags",
+    "gold provenance": [
+      "Ministero del Lavoro, interpello-1/2019 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-1/2020 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-1/2021 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-1/2022 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-1/2023 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-1/2024 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-2/2019 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-2/2021 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-2/2022 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-2/2023 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-2/2024 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-3/2019 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-3/2021 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-3/2022 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-3/2023 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-3/2024 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-4/2019 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-4/2023 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-4/2024 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-5/2019 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-5/2023 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-6/2019 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione",
+      "Ministero del Lavoro, interpello-8/2019 (risposta ufficiale = ground truth); estratto LLM 17 set 2026, revisione umana della selezione"
+    ]
+  },
+  "coverage": {
+    "stratifiable": 23,
+    "total": 23
+  },
+  "buckets": [
+    {
+      "bucket": "full_recall",
+      "n": 1,
+      "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "faithfulness": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "correctness": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "refusals": 0
+    },
+    {
+      "bucket": "partial_recall",
+      "n": 22,
+      "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "faithfulness": [
+        0.9040909090909091,
+        0.8377272727272728,
+        0.9636363636363636
+      ],
+      "correctness": [
+        0.6909090909090909,
+        0.55,
+        0.8318181818181818
+      ],
+      "citation_accuracy": [
+        0.13636363636363635,
+        0.0,
+        0.2727272727272727
+      ],
+      "refusals": 0
+    }
+  ],
+  "records": [
+    {
+      "question_id": "INT001",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "interpello-1/2019"
+      ],
+      "retrieved_articles": [
+        "interpello-1/2019",
+        "interpello-18/2016"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT002",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "39",
+        "8",
+        "interpello-2/2019"
+      ],
+      "retrieved_articles": [
+        "34",
+        "interpello-2/2019"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT003",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "4",
+        "interpello-3/2019"
+      ],
+      "retrieved_articles": [
+        "174",
+        "interpello-3/2019"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 0.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT004",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "25",
+        "53",
+        "interpello-4/2019"
+      ],
+      "retrieved_articles": [
+        "39",
+        "interpello-4/2019",
+        "interpello-8/2019"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 0.64,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT005",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "12",
+        "interpello-5/2019"
+      ],
+      "retrieved_articles": [
+        "interpello-17/2016",
+        "interpello-5/2019"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT006",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "21",
+        "interpello-6/2019"
+      ],
+      "retrieved_articles": [
+        "7",
+        "interpello-6/2019"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT007",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "25",
+        "40",
+        "41",
+        "interpello-8/2019"
+      ],
+      "retrieved_articles": [
+        "interpello-8/2019"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT008",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "interpello-1/2020"
+      ],
+      "retrieved_articles": [
+        "interpello-1/2020"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT010",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "interpello-1/2021"
+      ],
+      "retrieved_articles": [
+        "interpello-1/2021"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT011",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1",
+        "21",
+        "34",
+        "8",
+        "93",
+        "interpello-2/2021"
+      ],
+      "retrieved_articles": [
+        "interpello-2/2021"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT012",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "20",
+        "23",
+        "4",
+        "interpello-3/2021"
+      ],
+      "retrieved_articles": [
+        "interpello-3/2021"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT013",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "1677-bis",
+        "29",
+        "interpello-1/2022"
+      ],
+      "retrieved_articles": [
+        "interpello-1/2022"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT014",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "18",
+        "41",
+        "interpello-2/2022"
+      ],
+      "retrieved_articles": [
+        "18",
+        "interpello-2/2022"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT015",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "17",
+        "2",
+        "31",
+        "interpello-3/2022"
+      ],
+      "retrieved_articles": [
+        "31",
+        "interpello-3/2022"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT016",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "35",
+        "36",
+        "interpello-1/2023"
+      ],
+      "retrieved_articles": [
+        "0",
+        "36",
+        "interpello-1/2023"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 0.0,
+      "correctness": 0.9,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT017",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "17",
+        "18",
+        "2",
+        "25",
+        "28",
+        "29",
+        "41",
+        "interpello-2/2023"
+      ],
+      "retrieved_articles": [
+        "18",
+        "interpello-2/2022",
+        "interpello-2/2023"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT018",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "37",
+        "interpello-3/2023"
+      ],
+      "retrieved_articles": [
+        "11",
+        "111",
+        "interpello-3/2023"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT019",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "47",
+        "interpello-4/2023"
+      ],
+      "retrieved_articles": [
+        "0",
+        "46",
+        "47"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.6,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.8,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT020",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "18",
+        "19",
+        "2",
+        "37",
+        "55",
+        "interpello-5/2023"
+      ],
+      "retrieved_articles": [
+        "interpello-4/2024",
+        "interpello-5/2023"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT021",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "18",
+        "2",
+        "41",
+        "interpello-1/2024"
+      ],
+      "retrieved_articles": [
+        "155",
+        "87",
+        "interpello-1/2024"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT022",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "37",
+        "interpello-2/2024"
+      ],
+      "retrieved_articles": [
+        "interpello-2/2024"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT023",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "37",
+        "interpello-3/2024"
+      ],
+      "retrieved_articles": [
+        "interpello-3/2024"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "INT024",
+      "system": "vanilla",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "partial_recall",
+      "gold_articles": [
+        "18",
+        "19",
+        "2",
+        "26",
+        "55",
+        "interpello-4/2024"
+      ],
+      "retrieved_articles": [
+        "interpello-4/2024",
+        "interpello-5/2023"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    }
+  ]
+}

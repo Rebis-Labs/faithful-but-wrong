@@ -1,0 +1,1917 @@
+{
+  "generated": "2026-10-20T10:11:37.747724+00:00",
+  "meta": {
+    "gold": "eval/reports/fbw/v2/labor_v3/gold.jsonl",
+    "outputs": "eval/reports/fbw/v2/labor_v3/outputs.jsonl",
+    "judge": "anthropic/claude-sonnet-4.6",
+    "judge calls": 0,
+    "harness": "fbw-eval 0.1.0.dev0",
+    "thresholds": {
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.85,
+      "context_relevancy": 0.8,
+      "citation_accuracy": 0.9,
+      "correctness": null
+    },
+    "seed": 2026,
+    "citation parser": "built-in [Source: …] tags",
+    "gold provenance": [
+      "not stated"
+    ]
+  },
+  "coverage": {
+    "stratifiable": 45,
+    "total": 78
+  },
+  "buckets": [
+    {
+      "bucket": "full_recall",
+      "n": 37,
+      "pass_rate": [
+        0.32432432432432434,
+        0.1891891891891892,
+        0.4864864864864865
+      ],
+      "faithfulness": [
+        0.9188162162162162,
+        0.8783756756756756,
+        0.9547081081081081
+      ],
+      "correctness": [
+        0.7594594594594595,
+        0.6594594594594595,
+        0.845945945945946
+      ],
+      "citation_accuracy": [
+        0.9234234234234234,
+        0.8468468468468469,
+        0.9774774774774775
+      ],
+      "refusals": 0
+    },
+    {
+      "bucket": "zero_recall",
+      "n": 8,
+      "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "faithfulness": [
+        0.7135875,
+        0.525425,
+        0.904
+      ],
+      "correctness": [
+        0.35714285714285715,
+        0.14285714285714285,
+        0.6428571428571429
+      ],
+      "citation_accuracy": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "refusals": 1
+    },
+    {
+      "bucket": "no_gold_articles",
+      "n": 33,
+      "pass_rate": [
+        0.48484848484848486,
+        0.30303030303030304,
+        0.6666666666666666
+      ],
+      "faithfulness": [
+        0.92625,
+        0.8585714285714285,
+        0.9860714285714286
+      ],
+      "correctness": [
+        0.825,
+        0.7125,
+        0.9267857142857143
+      ],
+      "citation_accuracy": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "refusals": 2
+    }
+  ],
+  "records": [
+    {
+      "question_id": "LAB001",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "29",
+        "7"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB002",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "25",
+        "38"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB003",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "38",
+        "39"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB004",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "38",
+        "46"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB005",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "38",
+        "51"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB006",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "38"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB007",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "2110",
+        "25",
+        "38"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB008",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "30",
+        "38"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB009",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "22",
+        "30",
+        "38"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB010",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "41",
+        "44",
+        "51"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB011",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "51",
+        "61"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.6,
+      "answer_relevancy": 0.2,
+      "citation_accuracy": 1.0,
+      "correctness": 0.1,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB012",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "22",
+        "32"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB013",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "4"
+      ],
+      "retrieved_articles": [
+        "11",
+        "29",
+        "7"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB014",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "63",
+        "85"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB015",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "38",
+        "66"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB016",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "19"
+      ],
+      "retrieved_articles": [
+        "38",
+        "85",
+        "91"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 0.6667,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB017",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "18",
+        "38"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.875,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 0.75,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB018",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "19",
+        "20",
+        "32"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB019",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "1",
+        "1344",
+        "19",
+        "21",
+        "28",
+        "34",
+        "378"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB020",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "8",
+        "80"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB021",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "108",
+        "38"
+      ],
+      "context_relevancy": 0.0,
+      "faithfulness": 0.33,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB022",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "38",
+        "86",
+        "88"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB023",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "141",
+        "40"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB024",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "0",
+        "102",
+        "46"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB025",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": true,
+      "refused": true,
+      "refusal_type": "TP",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "0",
+        "1",
+        "20",
+        "35",
+        "36",
+        "360",
+        "6"
+      ],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB026",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": true,
+      "refused": true,
+      "refusal_type": "TP",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "circolare-inps-147-27/11/2025",
+        "circolare-inps-29-30/01/2025",
+        "circolare-inps-9-03/02/2026"
+      ],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB027",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "104",
+        "88",
+        "96"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.91,
+      "answer_relevancy": 0.5,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB028",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "10"
+      ],
+      "retrieved_articles": [
+        "10",
+        "7"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 0.86,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 0.5,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB029",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "1",
+        "23",
+        "61"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB030",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "30",
+        "38",
+        "7"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB031",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "1"
+      ],
+      "retrieved_articles": [
+        "1"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB032",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "2"
+      ],
+      "retrieved_articles": [
+        "1",
+        "2",
+        "54"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB033",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "1",
+        "2",
+        "90"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 0.75,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB034",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "3"
+      ],
+      "retrieved_articles": [
+        "2103",
+        "3",
+        "97"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 0.9,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB035",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "2103",
+        "3"
+      ],
+      "retrieved_articles": [
+        "105",
+        "27",
+        "98"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.375,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB036",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": true,
+      "refusal_type": "FP",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "6"
+      ],
+      "retrieved_articles": [
+        "0",
+        "20",
+        "78"
+      ],
+      "context_relevancy": null,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB037",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "8"
+      ],
+      "retrieved_articles": [
+        "8",
+        "80"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB038",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "8"
+      ],
+      "retrieved_articles": [
+        "1419",
+        "2",
+        "2106",
+        "8",
+        "97"
+      ],
+      "context_relevancy": 0.75,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB039",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "13"
+      ],
+      "retrieved_articles": [
+        "0",
+        "13"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 0.5,
+      "correctness": 0.75,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB040",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "13"
+      ],
+      "retrieved_articles": [
+        "0",
+        "13",
+        "interpello-6/2018"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB041",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "19"
+      ],
+      "retrieved_articles": [
+        "19",
+        "50",
+        "60"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.6,
+      "answer_relevancy": 0.6,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB042",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "21"
+      ],
+      "retrieved_articles": [
+        "21",
+        "6",
+        "93"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB043",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "21"
+      ],
+      "retrieved_articles": [
+        "50",
+        "60"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.857,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB044",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "23"
+      ],
+      "retrieved_articles": [
+        "23",
+        "6",
+        "68"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB045",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "22"
+      ],
+      "retrieved_articles": [
+        "1",
+        "22",
+        "67"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.875,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB046",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "41"
+      ],
+      "retrieved_articles": [
+        "0",
+        "22",
+        "41"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.91,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB047",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "44"
+      ],
+      "retrieved_articles": [
+        "2",
+        "43",
+        "44"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB048",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "42",
+        "44"
+      ],
+      "retrieved_articles": [
+        "0",
+        "43",
+        "6"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB049",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "30"
+      ],
+      "retrieved_articles": [
+        "30",
+        "33",
+        "interpello-2/2021"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB050",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "23"
+      ],
+      "retrieved_articles": [
+        "50",
+        "6",
+        "60"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.25,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB051",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "16"
+      ],
+      "retrieved_articles": [
+        "0",
+        "13",
+        "16"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.5,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB052",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "29"
+      ],
+      "retrieved_articles": [
+        "29",
+        "38"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.83,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB053",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "29"
+      ],
+      "retrieved_articles": [
+        "111",
+        "29",
+        "30"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.67,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB054",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "30"
+      ],
+      "retrieved_articles": [
+        "30",
+        "38",
+        "7"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB055",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "40"
+      ],
+      "retrieved_articles": [
+        "40",
+        "44",
+        "68"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.6667,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB056",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "43"
+      ],
+      "retrieved_articles": [
+        "147",
+        "43"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.71,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB057",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "44"
+      ],
+      "retrieved_articles": [
+        "38",
+        "44",
+        "circolare-inps-152-19/12/2025"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB058",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "25"
+      ],
+      "retrieved_articles": [
+        "25",
+        "38"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 1.0,
+      "correctness": 0.8,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB059",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "63"
+      ],
+      "retrieved_articles": [
+        "63",
+        "64",
+        "91"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 0.7,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB060",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "66"
+      ],
+      "retrieved_articles": [
+        "38",
+        "66"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB061",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "66"
+      ],
+      "retrieved_articles": [
+        "38",
+        "66"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 1.0,
+      "correctness": 0.9,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB062",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "26"
+      ],
+      "retrieved_articles": [
+        "25",
+        "26"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB063",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "28"
+      ],
+      "retrieved_articles": [
+        "22",
+        "28"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.9375,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB064",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "20"
+      ],
+      "retrieved_articles": [
+        "20",
+        "24",
+        "65"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB065",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "23",
+        "31"
+      ],
+      "retrieved_articles": [
+        "0",
+        "50",
+        "interpello-2/2021"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.56,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB066",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "8"
+      ],
+      "retrieved_articles": [
+        "1365",
+        "1419",
+        "2",
+        "29",
+        "38",
+        "45",
+        "5",
+        "6",
+        "8"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.857,
+      "answer_relevancy": 0.3,
+      "citation_accuracy": 1.0,
+      "correctness": 0.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB067",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "42"
+      ],
+      "retrieved_articles": [
+        "0",
+        "42"
+      ],
+      "context_relevancy": 0.5,
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 0.9,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB068",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "7"
+      ],
+      "retrieved_articles": [
+        "38",
+        "7",
+        "8"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB069",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "28"
+      ],
+      "retrieved_articles": [
+        "28",
+        "32",
+        "336",
+        "36",
+        "54"
+      ],
+      "context_relevancy": 0.75,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.7,
+      "citation_accuracy": 0.6666666666666666,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB070",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "1284",
+        "13",
+        "2",
+        "3",
+        "360",
+        "384",
+        "4",
+        "409",
+        "429",
+        "circolare-inps-100-10/06/2025",
+        "circolare-inps-56-11/03/2025"
+      ],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB073",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "286-quater",
+        "43",
+        "64"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.79,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.7,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB074",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "circolare-inps-12-05/02/2026",
+        "circolare-inps-126-15/09/2025",
+        "circolare-inps-156-30/12/2025"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 0.43,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 1.0,
+      "correctness": 0.3,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB075",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "11",
+        "circolare-inps-26-30/01/2025",
+        "circolare-inps-6-30/01/2026"
+      ],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB077",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "30"
+      ],
+      "retrieved_articles": [
+        "30",
+        "38"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 0.83,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB078",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "54"
+      ],
+      "retrieved_articles": [
+        "1",
+        "10",
+        "2",
+        "45",
+        "52",
+        "54",
+        "6"
+      ],
+      "context_relevancy": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 1.0,
+      "correctness": 0.9,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB079",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "24"
+      ],
+      "retrieved_articles": [
+        "24",
+        "59",
+        "7"
+      ],
+      "context_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 1.0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "question_id": "LAB080",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [
+        "129",
+        "130",
+        "27",
+        "34-ter",
+        "47-sexies",
+        "6",
+        "67"
+      ],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "LAB081",
+      "system": "grounded",
+      "domain": "labor_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "full_recall",
+      "gold_articles": [
+        "38"
+      ],
+      "retrieved_articles": [
+        "35",
+        "38",
+        "interpello-2/2021"
+      ],
+      "context_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 1.0,
+      "correctness": 0.75,
+      "passed": false,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# Citation verification — eval/reports/fbw/v2/frontier_criminal/outputs_perplexity.jsonl
+
+Judge: anthropic/claude-sonnet-4.6
+
+| System | answers | cited | checkable | supported | unsupported | not found | range/list | unverifiable | precision (checkable) | supported / cited |
+|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| perplexity | 30 | 110 | 34 (31%) | 19 | **14** | 1 | 5 | 71 | 56% | 17% |
+
+## Not supported / not found
+
+- CRIM004 · **perplexity** · `art. 303 c.p.p.` → unsupported — judge error: Connection error.
+- CRIM005 · **perplexity** · `art. 438 c.p.p.` → unsupported — Art. 438 c.p.p. regulates the request for and admission of the abbreviated trial but does not mention the one-third sentence reduction, which is governed by art. 442 c.p.p.
+- CRIM005 · **perplexity** · `art. 458 c.p.p.` → unsupported — Art. 458 c.p.p. regola il giudizio abbreviato nel caso specifico di giudizio immediato, non contiene le disposizioni generali sul rito abbreviato (riduzione di un terzo della pena, richiesta dell'imputato in via generale) citate nel testo, che trovano invece fondamento negli artt. 438 e 442 c.p.p.
+- CRIM011 · **perplexity** · `art. 110 c.p.` → unsupported — The claim text is incomplete/empty ('L\'**'), making it impossible to evaluate whether art. 110 c.p. supports it.
+- CRIM012 · **perplexity** · `[Source: art. 99 c.p. riportato in [7]` → unsupported — The claim incorrectly states that increases to 'half' or 'two thirds' apply when 'the subject is already recidivist' (i.e., further recidivism), but the actual text shows that increases up to half apply in the aggravated circumstances of the second paragraph (same type of crime, within five years, during/after execution of sentence), while the two-thirds increase applies to a recidivist who commits yet another crime in those aggravated circumstances—the claim conflates and misattributes these conditions.
+- CRIM012 · **perplexity** · `[Source: art. 172 c.p. riportato in [2]` → unsupported — Art. 172 c.p. does exclude extinction of punishment for certain recidivists (those under art. 99 aggravated forms), but the provision does not require that recidiva be 'dichiarata dal giudice di merito' to produce legal effects — that requirement is not mentioned anywhere in the actual text of art. 172 c.p.
+- CRIM016 · **perplexity** · `art. 273 c.p.p.` → unsupported — L'art. 273 c.p.p. disciplina solo i gravi indizi di colpevolezza e l'assenza di cause ostative, ma non menziona le esigenze cautelari (previste dall'art. 274 c.p.p.), quindi il testo citato non supporta integralmente l'affermazione che tutti e tre i presupposti siano contenuti in questa disposizione.
+- CRIM016 · **perplexity** · `art. 274 c.p.p.` → unsupported — Art. 274 c.p.p. disciplina esclusivamente le esigenze cautelari (pericolo per la prova, fuga, reiterazione del reato), mentre la claim lo cita come art. 273 c.p.p. e attribuisce alla norma anche i presupposti dei gravi indizi di colpevolezza e dell'assenza di cause ostative, che non sono contenuti nel testo dell'art. 274.
+- CRIM017 · **perplexity** · `art. 275 c.p.p.` → unsupported — The claim text is incomplete ('L\'') and provides no substantive assertion that can be evaluated against the provision.
+- CRIM017 · **perplexity** · `Gazzetta Ufficiale, art. 16, che riporta il testo vigente` → not_found — act in corpus, article absent
+- CRIM018 · **perplexity** · `art. 401 c.p.p.` → unsupported — Art. 401 c.p.p. regola le modalità di svolgimento dell'udienza di incidente probatorio (camera di consiglio, partecipanti, forme dibattimentali), ma non definisce l'istituto né stabilisce che la prova si forma prima del dibattimento con le regole del contraddittorio; tale definizione sarebbe più pertinente all'art. 392 c.p.p., che è la norma effettivamente citata nel testo della claim.
+- CRIM023 · **perplexity** · `art. 165 c.p.` → unsupported — The claim text is incomplete ('L\'') and provides no intelligible assertion that can be evaluated against the provision.
+- CRIM024 · **perplexity** · `art. 157 c.p.` → unsupported — L'art. 157 c.p. stabilisce che la prescrizione estingue il reato decorso il tempo corrispondente al massimo della pena edittale, ma non menziona la 'sentenza irrevocabile di condanna' come condizione che impedisce la prescrizione, elemento che invece è disciplinato dall'art. 158 e seguenti c.p.
+- CRIM024 · **perplexity** · `art. 160 c.p.` → unsupported — Art. 160 c.p. regola l'interruzione della prescrizione, non la definizione della prescrizione come causa di estinzione del reato né il termine iniziale del suo decorso; la definizione citata nella claim corrisponde invece all'art. 157 c.p.
+- CRIM_REF002 · **perplexity** · `[Source: art. 12 D.P.R. 380/2001]` → unsupported — The claim cites art. 20 D.P.R. 380/2001, but the actual provision provided is art. 12, which deals with the prerequisites for issuing a building permit; furthermore, the condition regarding primary urbanization within three years is found in art. 12, not art. 20, making the citation incorrect even if the substance may be partially reflected elsewhere in the decree.

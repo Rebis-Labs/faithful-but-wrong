@@ -1,0 +1,843 @@
+{
+  "generated": "2026-10-29T21:19:01.301377+00:00",
+  "meta": {
+    "gold": "eval/reports/fbw/v2/admin/gold.jsonl",
+    "outputs": "eval/reports/fbw/v2/frontier_admin/outputs_chatgpt.jsonl",
+    "judge": "anthropic/claude-sonnet-4.6",
+    "judge calls": 99,
+    "harness": "fbw-eval 0.1.0.dev0",
+    "thresholds": {
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.85,
+      "context_relevancy": 0.8,
+      "citation_accuracy": 0.9,
+      "correctness": null
+    },
+    "seed": 2026,
+    "citation parser": "built-in [Source: …] tags",
+    "gold provenance": [
+      "|anchor_2026-10-28:confirmed|anchor_2026-10-28:confirmed",
+      "|anchor_2026-10-28:fixed|anchor_2026-10-28:fixed",
+      "|anchor_2026-10-28:no_gold|anchor_2026-10-28:no_gold"
+    ]
+  },
+  "coverage": {
+    "stratifiable": 32,
+    "total": 38
+  },
+  "buckets": [
+    {
+      "bucket": "zero_recall",
+      "n": 32,
+      "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "faithfulness": [
+        0.0028125,
+        0.0,
+        0.0084375
+      ],
+      "correctness": [
+        0.9234375,
+        0.8609375,
+        0.978125
+      ],
+      "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "refusals": 0
+    },
+    {
+      "bucket": "no_gold_articles",
+      "n": 6,
+      "pass_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "faithfulness": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "correctness": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "citation_accuracy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "refusals": 0
+    }
+  ],
+  "records": [
+    {
+      "question_id": "ADM001",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "29"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM002",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "119"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM003",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "23",
+        "24",
+        "25"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM004",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "38"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM005",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "6"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM006",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "49",
+        "51"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM007",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM008",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "62"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM009",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "47"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM010",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "11"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM011",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "16"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM012",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "10"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.82,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM013",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "19"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM014",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "6"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 0.8,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM015",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM016",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "39"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.09,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM017",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "1",
+        "4"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.82,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM018",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "10"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM019",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "12"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.82,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM020",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "67"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM021",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "83"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM022",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "103"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM023",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "51"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM024",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "19"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM025",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "48"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM026",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "7"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM027",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "10"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM028",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "116"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.85,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM029",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "117",
+        "31"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "citation_accuracy": 0.0,
+      "correctness": 0.5,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM030",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "55",
+        "56"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM031",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "77"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM032",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "38"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9,
+      "citation_accuracy": 0.0,
+      "correctness": 1.0,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM033",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": false,
+      "refused": false,
+      "refusal_type": "TN",
+      "bucket": "zero_recall",
+      "gold_articles": [
+        "8"
+      ],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.4,
+      "citation_accuracy": 0.0,
+      "correctness": 0.75,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM_REF001",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM_REF002",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM_REF003",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM_REF004",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    },
+    {
+      "question_id": "ADM_REF005",
+      "system": "chatgpt",
+      "domain": "admin_tax_law",
+      "should_refuse": true,
+      "refused": false,
+      "refusal_type": "FN",
+      "bucket": "no_gold_articles",
+      "gold_articles": [],
+      "retrieved_articles": [],
+      "context_relevancy": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_accuracy": null,
+      "correctness": null,
+      "passed": false,
+      "errors": []
+    }
+  ]
+}

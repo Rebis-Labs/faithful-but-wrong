@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fbw-eval"
+version = "0.1.0"
+description = "Recall-conditional evaluation for retrieval-augmented legal QA: faithfulness and correctness reported per retrieval bucket, plus citation verification against a corpus."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Alessandro Esposito Brescia" }]
+dependencies = ["pydantic>=2.0"]
+
+[project.optional-dependencies]
+judge = ["openai>=1.0"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+fbw = "fbw.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["fbw*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
